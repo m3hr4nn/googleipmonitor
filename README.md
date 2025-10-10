@@ -6,7 +6,7 @@
 
 [![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/m3hr4nn/googleipmonitor/actions)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Telegram](https://img.shields.io/badge/Telegram-Bot-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.org/)
+[![Telegram](https://img.shields.io/badge/Telegram-Bot-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/googleipmonitor_bot)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 [Live Dashboard](https://m3hr4nn.github.io/googleipmonitor/) • [Export Rules](https://m3hr4nn.github.io/googleipmonitor/exports/) • [Report Bug](https://github.com/m3hr4nn/googleipmonitor/issues) • [Request Feature](https://github.com/m3hr4nn/googleipmonitor/issues)

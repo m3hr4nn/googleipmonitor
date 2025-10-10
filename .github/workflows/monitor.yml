@@ -2,9 +2,12 @@ name: Google IP Monitor
 
 on:
   schedule:
-    # Run at 9 AM UTC daily (adjust timezone as needed)
+    # Run at 9 AM UTC daily
     - cron: '0 9 * * *'
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   monitor:
@@ -14,7 +17,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        persist-credentials: true
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -32,9 +35,13 @@ jobs:
       run: |
         python monitor.py
     
+    - name: Generate HTML Report
+      run: |
+        python generate_report.py
+    
     - name: Commit and push changes
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add data/
+        git add data/ index.html
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update IP data - $(date +'%Y-%m-%d')" && git push)

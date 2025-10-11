@@ -61,74 +61,86 @@ def generate_html_report():
     added = sorted(list(today_prefixes - yesterday_prefixes))
     removed = sorted(list(yesterday_prefixes - today_prefixes))
     
+    # Separate IPv4 and IPv6 for detailed stats
+    today_ipv4 = sorted([ip for ip in today_prefixes if ':' not in ip])
+    today_ipv6 = sorted([ip for ip in today_prefixes if ':' in ip])
+
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google IP Monitor Report</title>
-    <style>
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }}
-        .container {{ max-width: 1200px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }}
-        .header {{ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; text-align: center; }}
-        .header h1 {{ font-size: 2.5em; margin-bottom: 10px; }}
-        .content {{ padding: 40px; }}
-        .stats {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px; }}
-        .stat-card {{ background: #f8f9fa; border-radius: 15px; padding: 25px; text-align: center; border: 2px solid #e9ecef; }}
-        .stat-card h3 {{ color: #6c757d; font-size: 0.9em; text-transform: uppercase; margin-bottom: 10px; }}
-        .stat-card .number {{ font-size: 2.5em; font-weight: bold; color: #667eea; }}
-        .stat-card p {{ color: #6c757d; margin-top: 10px; }}
-        .changes-section {{ margin-bottom: 40px; }}
-        .changes-section h2 {{ color: #333; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 3px solid #667eea; }}
-        .change-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 20px; }}
-        .change-box {{ background: #f8f9fa; border-radius: 15px; padding: 25px; }}
-        .change-box.added {{ border-left: 5px solid #28a745; }}
-        .change-box.removed {{ border-left: 5px solid #dc3545; }}
-        .change-box h3 {{ margin-bottom: 15px; }}
-        .change-box.added h3 {{ color: #28a745; }}
-        .change-box.removed h3 {{ color: #dc3545; }}
-        .ip-list {{ max-height: 400px; overflow-y: auto; background: white; border-radius: 10px; padding: 15px; }}
-        .ip-item {{ padding: 8px; margin: 5px 0; background: #e9ecef; border-radius: 5px; font-family: 'Courier New', monospace; font-size: 0.9em; }}
-        .no-changes {{ text-align: center; padding: 60px 20px; color: #6c757d; }}
-        .no-changes .icon {{ font-size: 4em; margin-bottom: 20px; }}
-        .footer {{ text-align: center; padding: 20px; color: #6c757d; border-top: 1px solid #e9ecef; }}
-    </style>
+    <title>Google IP Monitor - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🌐 Google IP Monitor</h1>
-            <p>Daily IP Range Change Report</p>
-        </div>
-        <div class="content">
-            <div class="stats">
-                <div class="stat-card">
-                    <h3>Previous Day</h3>
-                    <div class="number">{len(yesterday_prefixes)}</div>
-                    <p>{yesterday_date}</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Current Day</h3>
-                    <div class="number">{len(today_prefixes)}</div>
-                    <p>{today_date}</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Net Change</h3>
-                    <div class="number" style="color: {'#28a745' if len(today_prefixes) >= len(yesterday_prefixes) else '#dc3545'}">{len(today_prefixes) - len(yesterday_prefixes):+d}</div>
-                    <p>IP Ranges</p>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <div class="logo">
+                    <span class="logo-icon">🌐</span>
+                    <h1>Google IP Monitor</h1>
                 </div>
             </div>
+            <div class="header-right">
+                <div class="last-update">Last update: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="stats">
+                <div class="stat-card previous">
+                    <h3>Previous Day</h3>
+                    <div class="number">{len(yesterday_prefixes):,}</div>
+                    <p>{yesterday_date}</p>
+                </div>
+                <div class="stat-card current">
+                    <h3>Current Day</h3>
+                    <div class="number">{len(today_prefixes):,}</div>
+                    <p>{today_date}</p>
+                </div>
+                <div class="stat-card change">
+                    <h3>Net Change</h3>
+                    <div class="number {'positive' if len(today_prefixes) >= len(yesterday_prefixes) else 'negative'}">{len(today_prefixes) - len(yesterday_prefixes):+d}</div>
+                    <p>IP Ranges</p>
+                </div>
+                <div class="stat-card">
+                    <h3>IPv4 Ranges</h3>
+                    <div class="number">{len(today_ipv4):,}</div>
+                    <p>Active</p>
+                </div>
+                <div class="stat-card">
+                    <h3>IPv6 Ranges</h3>
+                    <div class="number">{len(today_ipv6):,}</div>
+                    <p>Active</p>
+                </div>
+            </div>
+
             <div class="changes-section">
-                <h2>📊 Changes Detected</h2>
+                <div class="section-header">
+                    <h2>📊 Changes Detected</h2>
+                    <span class="badge">{len(added) + len(removed)} total changes</span>
+                </div>
                 {f'''<div class="change-grid">
                     <div class="change-box added">
-                        <h3>➕ Added ({len(added)})</h3>
-                        <div class="ip-list">{''.join([f'<div class="ip-item">{ip}</div>' for ip in added[:100]]) if added else '<p style="text-align:center;color:#6c757d;">No ranges added</p>'}</div>
+                        <div class="change-box-header">
+                            <div class="change-box-title">
+                                <h3>➕ Added</h3>
+                            </div>
+                            <span class="count-badge">{len(added)}</span>
+                        </div>
+                        <div class="ip-list">{''.join([f'<div class="ip-item">{ip}</div>' for ip in added[:100]]) if added else '<div class="empty-state"><p>No ranges added</p></div>'}</div>
                     </div>
                     <div class="change-box removed">
-                        <h3>➖ Removed ({len(removed)})</h3>
-                        <div class="ip-list">{''.join([f'<div class="ip-item">{ip}</div>' for ip in removed[:100]]) if removed else '<p style="text-align:center;color:#6c757d;">No ranges removed</p>'}</div>
+                        <div class="change-box-header">
+                            <div class="change-box-title">
+                                <h3>➖ Removed</h3>
+                            </div>
+                            <span class="count-badge">{len(removed)}</span>
+                        </div>
+                        <div class="ip-list">{''.join([f'<div class="ip-item">{ip}</div>' for ip in removed[:100]]) if removed else '<div class="empty-state"><p>No ranges removed</p></div>'}</div>
                     </div>
                 </div>''' if (added or removed) else '''<div class="no-changes">
                     <div class="icon">✅</div>
@@ -136,12 +148,145 @@ def generate_html_report():
                     <p>All IP ranges remain unchanged</p>
                 </div>'''}
             </div>
+
+            <div class="changes-section">
+                <div class="section-header">
+                    <h2>🔥 Firewall Rules Export</h2>
+                    <span class="badge">9 formats available</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 32px;">
+                    <a href="exports/iptables.sh" download class="export-card">
+                        <div class="export-icon">🐧</div>
+                        <h3>iptables</h3>
+                        <p>Linux firewall rules</p>
+                        <span class="download-badge">Download .sh</span>
+                    </a>
+
+                    <a href="exports/aws-security-group.json" download class="export-card">
+                        <div class="export-icon">☁️</div>
+                        <h3>AWS Security Group</h3>
+                        <p>Amazon Web Services</p>
+                        <span class="download-badge">Download .json</span>
+                    </a>
+
+                    <a href="exports/azure-nsg.json" download class="export-card">
+                        <div class="export-icon">🔷</div>
+                        <h3>Azure NSG</h3>
+                        <p>Microsoft Azure</p>
+                        <span class="download-badge">Download .json</span>
+                    </a>
+
+                    <a href="exports/cisco-acl.txt" download class="export-card">
+                        <div class="export-icon">🌐</div>
+                        <h3>Cisco ACL</h3>
+                        <p>Cisco IOS access lists</p>
+                        <span class="download-badge">Download .txt</span>
+                    </a>
+
+                    <a href="exports/pfsense-alias.txt" download class="export-card">
+                        <div class="export-icon">🛡️</div>
+                        <h3>pfSense</h3>
+                        <p>pfSense firewall alias</p>
+                        <span class="download-badge">Download .txt</span>
+                    </a>
+
+                    <a href="exports/mikrotik.rsc" download class="export-card">
+                        <div class="export-icon">🔧</div>
+                        <h3>MikroTik</h3>
+                        <p>RouterOS script</p>
+                        <span class="download-badge">Download .rsc</span>
+                    </a>
+
+                    <a href="exports/plain-text.txt" download class="export-card">
+                        <div class="export-icon">📄</div>
+                        <h3>Plain Text</h3>
+                        <p>Simple text list</p>
+                        <span class="download-badge">Download .txt</span>
+                    </a>
+
+                    <a href="exports/export.csv" download class="export-card">
+                        <div class="export-icon">📊</div>
+                        <h3>CSV</h3>
+                        <p>Comma-separated values</p>
+                        <span class="download-badge">Download .csv</span>
+                    </a>
+
+                    <a href="exports/export.json" download class="export-card">
+                        <div class="export-icon">📦</div>
+                        <h3>JSON</h3>
+                        <p>Structured JSON data</p>
+                        <span class="download-badge">Download .json</span>
+                    </a>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="exports/index.html" style="color: var(--accent-blue); text-decoration: none; font-size: 14px;">
+                        View all export formats →
+                    </a>
+                </div>
+            </div>
         </div>
+
         <div class="footer">
             <p>Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}</p>
-            <p>Monitoring Google Cloud and Public IP Ranges</p>
+            <p>Monitoring Google Cloud and Public IP Ranges • <a href="https://github.com/m3hr4nn/googleipmonitor" target="_blank">GitHub</a></p>
         </div>
     </div>
+
+    <style>
+        .export-card {{
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }}
+
+        .export-card:hover {{
+            background-color: var(--bg-tertiary);
+            border-color: var(--accent-blue);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }}
+
+        .export-icon {{
+            font-size: 48px;
+            margin-bottom: 12px;
+        }}
+
+        .export-card h3 {{
+            color: var(--text-primary);
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }}
+
+        .export-card p {{
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin-bottom: 16px;
+        }}
+
+        .download-badge {{
+            background-color: var(--accent-blue);
+            color: var(--bg-primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }}
+
+        .export-card:hover .download-badge {{
+            background-color: var(--accent-green);
+        }}
+    </style>
 </body>
 </html>"""
     

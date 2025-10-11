@@ -11,7 +11,9 @@
 
 [Live Dashboard](https://m3hr4nn.github.io/googleipmonitor/) • [Export Rules](https://m3hr4nn.github.io/googleipmonitor/exports/) • [Report Bug](https://github.com/m3hr4nn/googleipmonitor/issues) • [Request Feature](https://github.com/m3hr4nn/googleipmonitor/issues)
 
-![Dashboard Preview](https://via.placeholder.com/800x400/202124/8ab4f8?text=Google+IP+Monitor+Dashboard)
+---
+
+**📸 [View Live Dashboard →](https://m3hr4nn.github.io/googleipmonitor/)**
 
 </div>
 
@@ -499,14 +501,27 @@ formats = {
 
 ## 📊 Dashboard Preview
 
-### Main Dashboard
-![Main Dashboard](https://via.placeholder.com/800x500/202124/8ab4f8?text=Main+Dashboard+with+Stats)
+### 🌐 Main Dashboard
+Experience the beautiful dark-themed interface with real-time statistics and change tracking.
 
-### Export Page
-![Export Page](https://via.placeholder.com/800x500/292a2d/81c995?text=Firewall+Export+Page)
+**Features:**
+- 📊 Live statistics cards (Previous Day, Current Day, Net Change, IPv4/IPv6 counts)
+- 📈 Color-coded change detection (Added/Removed IP ranges)
+- 🔥 Integrated firewall export section with 9 formats
+- 🎨 Chrome-inspired dark theme
+- 📱 Fully responsive design
 
-### Mobile View
-![Mobile View](https://via.placeholder.com/400x700/35363a/f28b82?text=Mobile+Responsive)
+**👉 [View Live Dashboard](https://m3hr4nn.github.io/googleipmonitor/)**
+
+### 🔥 Firewall Export Page
+Download ready-to-use firewall rules in your preferred format.
+
+**Available Formats:**
+- 🐧 iptables/ip6tables • ☁️ AWS Security Group • 🔷 Azure NSG
+- 🌐 Cisco ACL • 🛡️ pfSense • 🔧 MikroTik RouterOS
+- 📄 Plain Text • 📊 CSV • 📦 JSON
+
+**👉 [Browse Exports](https://m3hr4nn.github.io/googleipmonitor/exports/)**
 
 ---
 

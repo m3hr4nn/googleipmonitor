@@ -681,6 +681,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "136.110.128.0/17",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "136.110.64.0/18",
           "Description": "Google IP Range"
         }
@@ -2823,6 +2832,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "34.15.0.0/17",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "34.15.128.0/17",
           "Description": "Google IP Range"
         }
@@ -2941,6 +2959,15 @@
       "IpRanges": [
         {
           "CidrIp": "34.152.106.0/23",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "34.152.108.0/23",
           "Description": "Google IP Range"
         }
       ]
@@ -4146,6 +4173,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "34.177.76.0/23",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "34.177.78.0/25",
           "Description": "Google IP Range"
         }
@@ -4749,6 +4785,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "34.2.96.0/20",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "34.20.0.0/17",
           "Description": "Google IP Range"
         }
@@ -4894,6 +4939,15 @@
       "IpRanges": [
         {
           "CidrIp": "34.3.16.0/20",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "34.3.2.0/27",
           "Description": "Google IP Range"
         }
       ]
@@ -8278,6 +8332,15 @@
       "Ipv6Ranges": [
         {
           "CidrIpv6": "2600:1900:42a0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1900:42c0::/44",
           "Description": "Google IPv6 Range"
         }
       ]

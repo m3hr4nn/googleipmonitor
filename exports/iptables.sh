@@ -1,6 +1,6 @@
 #!/bin/bash
 # Google IP Ranges - iptables rules
-# Generated: 2025-10-11 09:07:39 UTC
+# Generated: 2025-10-11 12:13:55 UTC
 # Allow incoming traffic from Google IPs
 
 # IPv4 Rules
@@ -79,6 +79,7 @@ iptables -A INPUT -s 136.108.0.0/14 -j ACCEPT
 iptables -A INPUT -s 136.108.0.0/16 -j ACCEPT
 iptables -A INPUT -s 136.109.0.0/16 -j ACCEPT
 iptables -A INPUT -s 136.110.0.0/18 -j ACCEPT
+iptables -A INPUT -s 136.110.128.0/17 -j ACCEPT
 iptables -A INPUT -s 136.110.64.0/18 -j ACCEPT
 iptables -A INPUT -s 136.111.0.0/16 -j ACCEPT
 iptables -A INPUT -s 136.112.0.0/13 -j ACCEPT
@@ -317,6 +318,7 @@ iptables -A INPUT -s 34.147.0.0/17 -j ACCEPT
 iptables -A INPUT -s 34.147.128.0/17 -j ACCEPT
 iptables -A INPUT -s 34.148.0.0/16 -j ACCEPT
 iptables -A INPUT -s 34.149.0.0/16 -j ACCEPT
+iptables -A INPUT -s 34.15.0.0/17 -j ACCEPT
 iptables -A INPUT -s 34.15.128.0/17 -j ACCEPT
 iptables -A INPUT -s 34.150.0.0/17 -j ACCEPT
 iptables -A INPUT -s 34.150.128.0/17 -j ACCEPT
@@ -331,6 +333,7 @@ iptables -A INPUT -s 34.152.102.0/24 -j ACCEPT
 iptables -A INPUT -s 34.152.103.0/24 -j ACCEPT
 iptables -A INPUT -s 34.152.104.0/23 -j ACCEPT
 iptables -A INPUT -s 34.152.106.0/23 -j ACCEPT
+iptables -A INPUT -s 34.152.108.0/23 -j ACCEPT
 iptables -A INPUT -s 34.152.110.0/25 -j ACCEPT
 iptables -A INPUT -s 34.152.111.0/24 -j ACCEPT
 iptables -A INPUT -s 34.152.112.0/20 -j ACCEPT
@@ -464,6 +467,7 @@ iptables -A INPUT -s 34.177.70.0/24 -j ACCEPT
 iptables -A INPUT -s 34.177.71.0/24 -j ACCEPT
 iptables -A INPUT -s 34.177.72.0/23 -j ACCEPT
 iptables -A INPUT -s 34.177.74.0/23 -j ACCEPT
+iptables -A INPUT -s 34.177.76.0/23 -j ACCEPT
 iptables -A INPUT -s 34.177.78.0/25 -j ACCEPT
 iptables -A INPUT -s 34.177.79.0/24 -j ACCEPT
 iptables -A INPUT -s 34.178.0.0/16 -j ACCEPT
@@ -531,6 +535,7 @@ iptables -A INPUT -s 34.2.16.0/20 -j ACCEPT
 iptables -A INPUT -s 34.2.32.0/20 -j ACCEPT
 iptables -A INPUT -s 34.2.48.0/20 -j ACCEPT
 iptables -A INPUT -s 34.2.76.0/23 -j ACCEPT
+iptables -A INPUT -s 34.2.96.0/20 -j ACCEPT
 iptables -A INPUT -s 34.20.0.0/17 -j ACCEPT
 iptables -A INPUT -s 34.20.128.0/17 -j ACCEPT
 iptables -A INPUT -s 34.21.0.0/17 -j ACCEPT
@@ -548,6 +553,7 @@ iptables -A INPUT -s 34.27.0.0/16 -j ACCEPT
 iptables -A INPUT -s 34.28.0.0/14 -j ACCEPT
 iptables -A INPUT -s 34.3.0.0/23 -j ACCEPT
 iptables -A INPUT -s 34.3.16.0/20 -j ACCEPT
+iptables -A INPUT -s 34.3.2.0/27 -j ACCEPT
 iptables -A INPUT -s 34.3.3.0/24 -j ACCEPT
 iptables -A INPUT -s 34.3.32.0/19 -j ACCEPT
 iptables -A INPUT -s 34.3.32.0/20 -j ACCEPT
@@ -926,6 +932,7 @@ ip6tables -A INPUT -s 2600:1900:41e0::/44 -j ACCEPT
 ip6tables -A INPUT -s 2600:1900:4280::/44 -j ACCEPT
 ip6tables -A INPUT -s 2600:1900:4290::/44 -j ACCEPT
 ip6tables -A INPUT -s 2600:1900:42a0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1900:42c0::/44 -j ACCEPT
 ip6tables -A INPUT -s 2600:1900:42e0::/44 -j ACCEPT
 ip6tables -A INPUT -s 2600:1900:5400::/44 -j ACCEPT
 ip6tables -A INPUT -s 2600:1900:8000::/44 -j ACCEPT

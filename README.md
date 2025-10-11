@@ -2,14 +2,14 @@
 
 # 🌐 Google IP Monitor
 
-**Automated monitoring of Google's IP ranges with real-time alerts, beautiful visualizations, and firewall rule exports**
+**Automated monitoring of Google's IP ranges with real-time alerts, interactive charts, and firewall rule exports**
 
 [![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/m3hr4nn/googleipmonitor/actions)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Telegram](https://img.shields.io/badge/Telegram-Bot-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/googleipmonitor_bot)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-[Live Dashboard](https://m3hr4nn.github.io/googleipmonitor/) • [Export Rules](https://m3hr4nn.github.io/googleipmonitor/exports/) • [Report Bug](https://github.com/m3hr4nn/googleipmonitor/issues) • [Request Feature](https://github.com/m3hr4nn/googleipmonitor/issues)
+[Live Dashboard](https://m3hr4nn.github.io/googleipmonitor/) • [Chart Analytics](https://m3hr4nn.github.io/googleipmonitor/exports/charts/) • [Export Rules](https://m3hr4nn.github.io/googleipmonitor/exports/) • [Roadmap](ROADMAP.md)
 
 ---
 
@@ -26,8 +26,10 @@ Google IP Monitor is an **automated infrastructure monitoring tool** that tracks
 ### Why Google IP Monitor?
 
 - 🔔 **Real-time Alerts** - Get instant Telegram notifications every 3 hours when IP ranges change
+- 📈 **Interactive Charts** - Visualize IP growth trends with Chart.js (Line, Bar, Pie charts)
 - 🔥 **Firewall Export** - Download ready-to-use rules for 9+ firewall formats (iptables, AWS, Azure, Cisco, pfSense, MikroTik, etc.)
 - 📊 **Visual Dashboard** - Beautiful Chrome-inspired dark theme interface
+- 🏗️ **Microservices Architecture** - Modular, scalable, and maintainable design
 - 🤖 **Fully Automated** - Runs every 3 hours via GitHub Actions, zero maintenance
 - 💰 **100% Free** - No servers, no costs, forever
 - 📈 **Historical Tracking** - All changes stored in Git for audit trails
@@ -43,9 +45,12 @@ Google IP Monitor is an **automated infrastructure monitoring tool** that tracks
 |---------|-------------|
 | **Every 3 Hours Monitoring** | Automatically checks Google's IP ranges 8 times per day |
 | **Change Detection** | Identifies added and removed IP prefixes with detailed diff reports |
+| **Interactive Charts** | Line, Bar, and Pie charts showing historical trends and analytics |
 | **Telegram Alerts** | Instant notifications with formatted summaries of changes |
 | **9 Export Formats** | Download firewall rules for iptables, AWS, Azure, Cisco, pfSense, MikroTik, CSV, JSON, Plain Text |
+| **Chart Data Exports** | Export historical metrics in CSV, JSON, and Markdown formats |
 | **Web Dashboard** | Responsive, dark-themed interface showing current status and history |
+| **Microservices Backend** | 5 independent services for scalability and maintainability |
 | **Git-based Storage** | All data versioned and tracked in GitHub |
 | **Multi-source** | Monitors both `cloud.json` and `goog.json` endpoints |
 
@@ -102,8 +107,13 @@ Google IP Monitor is an **automated infrastructure monitoring tool** that tracks
 ### 🌐 Dashboard Features
 
 - **Live Statistics** - Current vs previous day comparison
+- **Historical Charts** - Interactive visualizations with Chart.js
+  - 📈 Line Chart: IP range growth over time
+  - 📊 Bar Chart: Daily changes (last 30 days)
+  - 🥧 Pie Chart: IPv4 vs IPv6 distribution
 - **Change Tracking** - Color-coded additions and removals
 - **One-Click Export** - Download firewall rules in your preferred format
+- **Chart Data Exports** - Export metrics to CSV, JSON, Markdown
 - **Responsive Design** - Works on desktop, tablet, and mobile
 - **Fast Navigation** - Quick access to exports and historical data
 
@@ -197,28 +207,58 @@ Actions → Google IP Monitor → Run workflow
 
 🎉 Done! Your dashboard will be live in 2-3 minutes at:
 - **Dashboard**: `https://YOUR_USERNAME.github.io/googleipmonitor/`
-- **Exports**: `https://YOUR_USERNAME.github.io/googleipmonitor/exports/`
+- **Chart Analytics**: `https://YOUR_USERNAME.github.io/googleipmonitor/exports/charts/`
+- **Firewall Exports**: `https://YOUR_USERNAME.github.io/googleipmonitor/exports/`
 
 ---
 
 ## 📊 Architecture
 
+### High-Level Overview
+
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│              GitHub Actions (Every 3 Hours)                      │
-│  ┌─────────────┐   ┌──────────────┐   ┌────────────────────┐  │
-│  │  Fetch IPs  │──▶│ Compare Data │──▶│ Generate Reports   │  │
-│  │  from Google│   │  Find Changes│   │  & Export Formats  │  │
-│  └─────────────┘   └──────────────┘   └────────────────────┘  │
-└─────────────────────────────────────────────────────────────────┘
-           │                    │                    │
-           ▼                    ▼                    ▼
-    ┌──────────┐         ┌──────────┐        ┌──────────┐
-    │   Git    │         │ Telegram │        │  GitHub  │
-    │ History  │         │   Bot    │        │  Pages   │
-    │ + Exports│         │          │        │ Dashboard│
-    └──────────┘         └──────────┘        └──────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│                GitHub Actions (Every 3 Hours)                        │
+│  ┌─────────────┐   ┌──────────────┐   ┌─────────────────────────┐ │
+│  │  Fetch IPs  │──▶│ Compare Data │──▶│ Generate Dashboard      │ │
+│  │  from Google│   │  Find Changes│   │  + Charts (via Gateway) │ │
+│  └─────────────┘   └──────────────┘   └─────────────────────────┘ │
+└─────────────────────────────────────────────────────────────────────┘
+           │                    │                         │
+           ▼                    ▼                         ▼
+    ┌──────────┐         ┌──────────┐             ┌──────────┐
+    │   Git    │         │ Telegram │             │  GitHub  │
+    │ History  │         │   Bot    │             │  Pages   │
+    │ + Cache  │         │          │             │ Dashboard│
+    └──────────┘         └──────────┘             └──────────┘
 ```
+
+### Microservices Architecture (v1.1.0+)
+
+```
+generate_report.py
+    ↓
+ChartAPIGateway (Orchestrator)
+    ↓
+    ├→ [1] DataAggregatorService ────▶ cache/metrics.json
+    ↓
+    ├→ [2] ChartConfigService ────────▶ cache/chart_configs.json
+    ↓
+    ├→ [3] ChartRendererService ──────▶ HTML/JavaScript
+    ↓
+    └→ [4] ChartExportService ─────────▶ exports/charts/*
+    ↓
+Return to generate_report.py ──▶ Inject into index.html
+```
+
+**5 Independent Microservices:**
+1. **DataAggregatorService** - Parse historical data and compute metrics
+2. **ChartConfigService** - Generate Chart.js configurations
+3. **ChartRendererService** - Render HTML/JavaScript components
+4. **ChartExportService** - Export data in multiple formats
+5. **ChartAPIGateway** - Orchestrate all services with error handling
+
+For detailed architecture documentation, see [CLAUDE.md](CLAUDE.md)
 
 ---
 
@@ -316,6 +356,22 @@ self.urls = {
 }
 ```
 
+### Customize Charts
+
+Edit `config/chart_settings.json`:
+
+```json
+{
+  "enabled": true,
+  "days_to_show": 90,
+  "charts": {
+    "line_chart": {"enabled": true, "height": 400},
+    "bar_chart": {"enabled": true, "height": 350},
+    "pie_chart": {"enabled": true, "height": 320}
+  }
+}
+```
+
 ### Customize Theme
 
 Edit `styles.css` to change colors:
@@ -339,60 +395,14 @@ If you just want exports without Telegram notifications:
 
 ## 🔮 Roadmap
 
-### ✅ Completed Features
+See the detailed [ROADMAP.md](ROADMAP.md) for:
+- ✅ Completed features (v1.0.0 - v1.1.0)
+- 🚧 In-progress development
+- 📋 Planned features with timelines
+- 💡 Feature request process
+- 📅 Release schedule
 
-- [x] Daily monitoring and change detection
-- [x] Telegram notifications
-- [x] Dark theme dashboard
-- [x] Every 3-hour monitoring
-- [x] 9 firewall export formats
-- [x] Historical data tracking
-- [x] GitHub Actions automation
-
-### 🚧 In Progress
-
-- [ ] Historical charts with Chart.js
-- [ ] Email digest notifications
-- [ ] Advanced search and filtering
-
-### 📋 Planned Features
-
-#### High Priority
-1. **📈 Historical Charts** - Visualize IP range growth over time
-   - Line charts for trend analysis
-   - Bar charts for daily changes
-   - Pie charts for IPv4/IPv6 distribution
-   
-2. **📧 Email Notifications** - SendGrid/SMTP integration
-   - Daily/Weekly digest options
-   - HTML formatted emails
-   - Multiple recipients
-
-3. **🔍 Advanced Search** - Frontend filtering
-   - Search by CIDR, region, or service
-   - Filter IPv4/IPv6
-   - Date range filtering
-   - Copy to clipboard
-
-#### Medium Priority
-4. **🗺️ Geographic Mapping** - Interactive world map
-5. **📊 Trend Analysis** - AI-powered insights
-6. **🎮 Discord Integration** - Rich embeds and webhooks
-7. **🔄 Automated Deployment** - Generate Terraform/Ansible code
-8. **📱 Mobile Responsive** - Enhanced mobile experience
-
-#### Nice to Have
-9. **🤖 Slack Integration** - Team notifications
-10. **📝 Change Annotations** - Add notes to specific changes
-11. **🔔 Custom Webhooks** - Trigger custom actions
-12. **📧 Digest Mode** - Weekly summaries
-13. **🎯 Regional Filtering** - Monitor specific regions only
-14. **🔐 API Endpoint** - REST API for programmatic access
-15. **📦 Docker Support** - Containerized deployment option
-
-### 💡 Want a Feature?
-
-[Create an issue](https://github.com/m3hr4nn/googleipmonitor/issues) and vote with 👍 on existing requests!
+**Want a feature?** [Create an issue](https://github.com/m3hr4nn/googleipmonitor/issues) or vote with 👍 on existing requests!
 
 ---
 
@@ -435,41 +445,62 @@ export TELEGRAM_CHAT_ID="your-chat-id"
 
 # Run locally
 python monitor.py                    # Fetch and compare IPs
-python generate_report.py            # Generate dashboard
+python generate_report.py            # Generate dashboard with charts
 python generate_firewall_rules.py    # Generate exports
 
+# Test microservices (v1.1.0+)
+python services/chart_api_gateway.py # Test full chart pipeline
+
 # View locally
-open index.html                      # Dashboard
-open exports/index.html              # Export page
+open index.html                      # Main dashboard
+open exports/charts/index.html       # Chart data exports
+open exports/index.html              # Firewall exports
 ```
 
 ### Project Structure
 
 ```
 googleipmonitor/
-├── .github/
-│   └── workflows/
-│       └── monitor.yml              # GitHub Actions (runs every 3 hours)
-├── data/                            # Historical IP data (auto-generated)
+├── .github/workflows/
+│   └── monitor.yml              # GitHub Actions (every 3 hours)
+├── services/                    # 🆕 Microservices (v1.1.0)
+│   ├── aggregator_service.py    # Data aggregation
+│   ├── chart_config_service.py  # Chart configurations
+│   ├── chart_renderer_service.py # HTML rendering
+│   ├── chart_export_service.py  # Data exports
+│   └── chart_api_gateway.py     # Service orchestrator
+├── config/                      # 🆕 Configuration (v1.1.0)
+│   └── chart_settings.json      # Chart customization
+├── cache/                       # 🆕 Service cache (v1.1.0)
+│   ├── metrics.json             # Aggregated metrics
+│   └── chart_configs.json       # Chart.js configs
+├── data/                        # Historical IP snapshots
 │   └── YYYY-MM-DD.json
-├── exports/                         # Firewall rules (auto-generated)
-│   ├── index.html                   # Export dashboard
-│   ├── iptables.sh                  # Linux firewall
-│   ├── aws-security-group.json      # AWS format
-│   ├── azure-nsg.json               # Azure format
-│   ├── cisco-acl.txt                # Cisco IOS
-│   ├── pfsense-alias.txt            # pfSense
-│   ├── mikrotik.rsc                 # MikroTik
-│   ├── plain-text.txt               # Plain text
-│   ├── export.csv                   # CSV format
-│   └── export.json                  # JSON format
-├── monitor.py                       # Core monitoring logic
-├── generate_report.py               # HTML dashboard generator
-├── generate_firewall_rules.py       # Export generator (NEW!)
-├── styles.css                       # Dashboard styling
-├── index.html                       # Main dashboard (auto-generated)
-├── requirements.txt                 # Python dependencies
-└── README.md                        # You are here!
+├── exports/
+│   ├── charts/                  # 🆕 Chart data exports (v1.1.0)
+│   │   ├── index.html
+│   │   ├── historical_metrics.csv
+│   │   ├── historical_metrics.json
+│   │   └── summary.md
+│   ├── index.html               # Firewall export dashboard
+│   ├── iptables.sh              # Linux firewall
+│   ├── aws-security-group.json  # AWS format
+│   ├── azure-nsg.json           # Azure format
+│   ├── cisco-acl.txt            # Cisco IOS
+│   ├── pfsense-alias.txt        # pfSense
+│   ├── mikrotik.rsc             # MikroTik
+│   ├── plain-text.txt           # Plain text
+│   ├── export.csv               # CSV format
+│   └── export.json              # JSON format
+├── monitor.py                   # Core monitoring logic
+├── generate_report.py           # Dashboard + charts generator
+├── generate_firewall_rules.py   # Firewall export generator
+├── styles.css                   # Dashboard styling
+├── index.html                   # Main dashboard (auto-generated)
+├── CLAUDE.md                    # Architecture documentation
+├── ROADMAP.md                   # 🆕 Product roadmap (v1.1.0)
+├── requirements.txt             # Python dependencies
+└── README.md                    # You are here!
 ```
 
 ### Adding a New Export Format
@@ -502,16 +533,26 @@ formats = {
 ## 📊 Dashboard Preview
 
 ### 🌐 Main Dashboard
-Experience the beautiful dark-themed interface with real-time statistics and change tracking.
+Beautiful dark-themed interface with real-time statistics, interactive charts, and change tracking.
 
 **Features:**
-- 📊 Live statistics cards (Previous Day, Current Day, Net Change, IPv4/IPv6 counts)
-- 📈 Color-coded change detection (Added/Removed IP ranges)
-- 🔥 Integrated firewall export section with 9 formats
+- 📊 Live statistics cards (Previous Day, Current Day, Net Change, IPv4/IPv6)
+- 📈 Interactive charts (Line, Bar, Pie charts with Chart.js)
 - 🎨 Chrome-inspired dark theme
+- 🔥 Integrated exports with 9 formats
 - 📱 Fully responsive design
 
 **👉 [View Live Dashboard](https://m3hr4nn.github.io/googleipmonitor/)**
+
+### 📈 Chart Analytics Page
+Export and analyze historical IP range metrics.
+
+**Available Exports:**
+- 📊 CSV for Excel analysis
+- 📦 JSON for API consumption
+- 📄 Markdown for documentation
+
+**👉 [Browse Chart Data](https://m3hr4nn.github.io/googleipmonitor/exports/charts/)**
 
 ### 🔥 Firewall Export Page
 Download ready-to-use firewall rules in your preferred format.

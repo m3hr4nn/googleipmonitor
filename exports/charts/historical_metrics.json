@@ -1,0 +1,46 @@
+{
+  "data": {
+    "timestamps": [
+      "2025-10-10",
+      "2025-10-11"
+    ],
+    "total_ranges": [
+      949,
+      949
+    ],
+    "ipv4_counts": [
+      887,
+      887
+    ],
+    "ipv6_counts": [
+      62,
+      62
+    ],
+    "daily_added": [
+      0,
+      0
+    ],
+    "daily_removed": [
+      0,
+      0
+    ]
+  },
+  "summary": {
+    "total_data_points": 2,
+    "date_range": {
+      "start": "2025-10-10",
+      "end": "2025-10-11"
+    },
+    "current_total": 949,
+    "current_ipv4": 887,
+    "current_ipv6": 62,
+    "total_growth": 0,
+    "avg_daily_change": 0.0
+  },
+  "metadata": {
+    "exported_at": "2025-10-11T11:09:32.447601",
+    "service": "ChartExportService",
+    "version": "1.1.0",
+    "format": "json"
+  }
+}

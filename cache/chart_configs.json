@@ -1,0 +1,295 @@
+{
+  "line_chart": {
+    "type": "line",
+    "data": {
+      "labels": [
+        "2025-10-10",
+        "2025-10-11"
+      ],
+      "datasets": [
+        {
+          "label": "Total IP Ranges",
+          "data": [
+            949,
+            949
+          ],
+          "borderColor": "#8ab4f8",
+          "backgroundColor": "#8ab4f820",
+          "borderWidth": 2,
+          "tension": 0.4,
+          "fill": true,
+          "pointRadius": 3,
+          "pointHoverRadius": 6,
+          "pointBackgroundColor": "#8ab4f8"
+        },
+        {
+          "label": "IPv4 Ranges",
+          "data": [
+            887,
+            887
+          ],
+          "borderColor": "#81c995",
+          "backgroundColor": "#81c99520",
+          "borderWidth": 2,
+          "tension": 0.4,
+          "fill": true,
+          "pointRadius": 2,
+          "pointHoverRadius": 5,
+          "pointBackgroundColor": "#81c995"
+        },
+        {
+          "label": "IPv6 Ranges",
+          "data": [
+            62,
+            62
+          ],
+          "borderColor": "#c58af9",
+          "backgroundColor": "#c58af920",
+          "borderWidth": 2,
+          "tension": 0.4,
+          "fill": true,
+          "pointRadius": 2,
+          "pointHoverRadius": 5,
+          "pointBackgroundColor": "#c58af9"
+        }
+      ]
+    },
+    "options": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "plugins": {
+        "legend": {
+          "labels": {
+            "color": "#e8eaed",
+            "font": {
+              "family": "'Segoe UI', Roboto, sans-serif",
+              "size": 12
+            },
+            "padding": 15,
+            "usePointStyle": true
+          }
+        },
+        "tooltip": {
+          "backgroundColor": "#323232",
+          "titleColor": "#e8eaed",
+          "bodyColor": "#9aa0a6",
+          "borderColor": "#3c4043",
+          "borderWidth": 1,
+          "padding": 12,
+          "displayColors": true,
+          "callbacks": {}
+        },
+        "title": {
+          "display": true,
+          "text": "IP Range Growth Over Time",
+          "color": "#e8eaed",
+          "font": {
+            "size": 16,
+            "weight": "500"
+          },
+          "padding": 20
+        }
+      },
+      "interaction": {
+        "intersect": false,
+        "mode": "index"
+      },
+      "scales": {
+        "x": {
+          "grid": {
+            "color": "#3c404340",
+            "drawBorder": false
+          },
+          "ticks": {
+            "color": "#9aa0a6",
+            "maxRotation": 45,
+            "minRotation": 45
+          }
+        },
+        "y": {
+          "grid": {
+            "color": "#3c404340",
+            "drawBorder": false
+          },
+          "ticks": {
+            "color": "#9aa0a6"
+          },
+          "beginAtZero": false
+        }
+      }
+    }
+  },
+  "bar_chart": {
+    "type": "bar",
+    "data": {
+      "labels": [
+        "2025-10-10",
+        "2025-10-11"
+      ],
+      "datasets": [
+        {
+          "label": "Added",
+          "data": [
+            0,
+            0
+          ],
+          "backgroundColor": "#81c995cc",
+          "borderColor": "#81c995",
+          "borderWidth": 1,
+          "borderRadius": 4
+        },
+        {
+          "label": "Removed",
+          "data": [
+            0,
+            0
+          ],
+          "backgroundColor": "#f28b82cc",
+          "borderColor": "#f28b82",
+          "borderWidth": 1,
+          "borderRadius": 4
+        }
+      ]
+    },
+    "options": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "plugins": {
+        "legend": {
+          "labels": {
+            "color": "#e8eaed",
+            "font": {
+              "family": "'Segoe UI', Roboto, sans-serif",
+              "size": 12
+            },
+            "padding": 15,
+            "usePointStyle": true
+          }
+        },
+        "tooltip": {
+          "backgroundColor": "#323232",
+          "titleColor": "#e8eaed",
+          "bodyColor": "#9aa0a6",
+          "borderColor": "#3c4043",
+          "borderWidth": 1,
+          "padding": 12,
+          "displayColors": true,
+          "callbacks": {}
+        },
+        "title": {
+          "display": true,
+          "text": "Daily IP Range Changes (Last 30 Days)",
+          "color": "#e8eaed",
+          "font": {
+            "size": 16,
+            "weight": "500"
+          },
+          "padding": 20
+        }
+      },
+      "interaction": {
+        "intersect": false,
+        "mode": "index"
+      },
+      "scales": {
+        "x": {
+          "grid": {
+            "display": false
+          },
+          "ticks": {
+            "color": "#9aa0a6",
+            "maxRotation": 45,
+            "minRotation": 45
+          }
+        },
+        "y": {
+          "grid": {
+            "color": "#3c404340",
+            "drawBorder": false
+          },
+          "ticks": {
+            "color": "#9aa0a6"
+          },
+          "beginAtZero": true
+        }
+      }
+    }
+  },
+  "pie_chart": {
+    "type": "doughnut",
+    "data": {
+      "labels": [
+        "IPv4 (93.5%)",
+        "IPv6 (6.5%)"
+      ],
+      "datasets": [
+        {
+          "data": [
+            887,
+            62
+          ],
+          "backgroundColor": [
+            "#81c995dd",
+            "#c58af9dd"
+          ],
+          "borderColor": [
+            "#81c995",
+            "#c58af9"
+          ],
+          "borderWidth": 2,
+          "hoverOffset": 10
+        }
+      ]
+    },
+    "options": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "plugins": {
+        "legend": {
+          "labels": {
+            "color": "#e8eaed",
+            "font": {
+              "family": "'Segoe UI', Roboto, sans-serif",
+              "size": 12
+            },
+            "padding": 15,
+            "usePointStyle": true
+          }
+        },
+        "tooltip": {
+          "backgroundColor": "#323232",
+          "titleColor": "#e8eaed",
+          "bodyColor": "#9aa0a6",
+          "borderColor": "#3c4043",
+          "borderWidth": 1,
+          "padding": 12,
+          "displayColors": true,
+          "callbacks": {
+            "label": "(ctx) => ctx.label + \": \" + ctx.parsed.toLocaleString() + \" ranges\""
+          }
+        },
+        "title": {
+          "display": true,
+          "text": "IPv4 vs IPv6 Distribution",
+          "color": "#e8eaed",
+          "font": {
+            "size": 16,
+            "weight": "500"
+          },
+          "padding": 20
+        }
+      },
+      "interaction": {
+        "intersect": false,
+        "mode": "index"
+      },
+      "cutout": "60%"
+    }
+  },
+  "metadata": {
+    "generated_at": "2025-10-11T11:09:32.445768",
+    "service": "ChartConfigService",
+    "version": "1.1.0",
+    "theme": "chrome-dark"
+  }
+}

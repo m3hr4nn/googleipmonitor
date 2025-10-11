@@ -77,3 +77,7 @@ credentials.json
 # Local development
 *.local
 local/
+
+# Cache directory (chart data is committed for GitHub Pages)
+# Note: We commit cache/ to enable charts on GitHub Pages
+# cache/

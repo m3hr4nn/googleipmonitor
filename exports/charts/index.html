@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Analytics Exports</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <div class="logo">
+                    <span class="logo-icon">📊</span>
+                    <h1>Historical Analytics Exports</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="changes-section">
+                <div class="section-header">
+                    <h2>📥 Download Historical Data</h2>
+                    <span class="badge">3 formats available</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+                    <a href="historical_metrics.csv" download class="export-card">
+                        <div class="export-icon">📊</div>
+                        <h3>CSV Export</h3>
+                        <p>Excel-compatible spreadsheet</p>
+                        <span class="download-badge">Download .csv</span>
+                    </a>
+
+                    <a href="historical_metrics.json" download class="export-card">
+                        <div class="export-icon">📦</div>
+                        <h3>JSON Export</h3>
+                        <p>API-friendly format</p>
+                        <span class="download-badge">Download .json</span>
+                    </a>
+
+                    <a href="summary.md" download class="export-card">
+                        <div class="export-icon">📄</div>
+                        <h3>Summary Report</h3>
+                        <p>Markdown documentation</p>
+                        <span class="download-badge">Download .md</span>
+                    </a>
+                </div>
+
+                <div style="margin-top: 32px; text-align: center;">
+                    <a href="../../index.html" style="color: var(--accent-blue); text-decoration: none;">
+                        ← Back to Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Generated on 2025-10-11 11:09:32 UTC</p>
+            <p>Google IP Monitor • Historical Analytics Exports</p>
+        </div>
+    </div>
+
+    <style>
+        .export-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .export-card:hover {
+            background-color: var(--bg-tertiary);
+            border-color: var(--accent-blue);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .export-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .export-card h3 {
+            color: var(--text-primary);
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .export-card p {
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        .download-badge {
+            background-color: var(--accent-blue);
+            color: var(--bg-primary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .export-card:hover .download-badge {
+            background-color: var(--accent-green);
+        }
+    </style>
+</body>
+</html>

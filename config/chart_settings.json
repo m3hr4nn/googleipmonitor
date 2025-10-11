@@ -1,0 +1,53 @@
+{
+  "enabled": true,
+  "days_to_show": 90,
+  "use_cache": true,
+  "refresh_interval": "3h",
+  "charts": {
+    "line_chart": {
+      "enabled": true,
+      "title": "IP Range Growth Over Time",
+      "height": 400,
+      "show_legend": true,
+      "datasets": {
+        "total_ranges": true,
+        "ipv4_ranges": true,
+        "ipv6_ranges": true
+      }
+    },
+    "bar_chart": {
+      "enabled": true,
+      "title": "Daily IP Range Changes",
+      "height": 350,
+      "show_legend": true,
+      "max_days": 30,
+      "datasets": {
+        "added": true,
+        "removed": true
+      }
+    },
+    "pie_chart": {
+      "enabled": true,
+      "title": "IPv4 vs IPv6 Distribution",
+      "height": 320,
+      "show_legend": true,
+      "chart_type": "doughnut"
+    }
+  },
+  "exports": {
+    "enabled": true,
+    "formats": {
+      "csv": true,
+      "json": true,
+      "markdown": true
+    }
+  },
+  "cache": {
+    "enabled": true,
+    "ttl": 10800
+  },
+  "theme": {
+    "mode": "dark",
+    "color_scheme": "chrome-inspired"
+  }
+}

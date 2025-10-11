@@ -2,10 +2,16 @@ import os
 import json
 from datetime import datetime, timedelta
 from glob import glob
+from services.chart_api_gateway import ChartAPIGateway
 
 def generate_html_report():
     data_dir = 'data'
-    
+
+    # Generate historical charts via microservices gateway
+    print("\n🚀 Initializing Chart API Gateway...")
+    chart_gateway = ChartAPIGateway()
+    chart_result = chart_gateway.run()
+
     # Get all available data files
     data_files = sorted(glob(os.path.join(data_dir, '*.json')))
     
@@ -72,6 +78,7 @@ def generate_html_report():
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google IP Monitor - Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    {chart_result.get('cdn_script', '')}
 </head>
 <body>
     <header class="header">
@@ -117,6 +124,8 @@ def generate_html_report():
                     <p>Active</p>
                 </div>
             </div>
+
+            {chart_result.get('charts_section', '')}
 
             <div class="changes-section">
                 <div class="section-header">

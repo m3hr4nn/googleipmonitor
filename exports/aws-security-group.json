@@ -5217,6 +5217,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "34.4.80.0/20",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "34.40.0.0/17",
           "Description": "Google IP Range"
         }

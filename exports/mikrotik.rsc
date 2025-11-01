@@ -1,5 +1,5 @@
 # Google IP Ranges - MikroTik RouterOS
-# Generated: 2025-10-31 21:08:01 UTC
+# Generated: 2025-11-01 00:45:25 UTC
 
 # Create address list
 /ip firewall address-list

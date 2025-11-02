@@ -4218,6 +4218,24 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "34.177.80.0/20",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "34.177.96.0/20",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "34.178.0.0/16",
           "Description": "Google IP Range"
         }
@@ -4678,6 +4696,15 @@
       "IpRanges": [
         {
           "CidrIp": "34.186.192.0/19",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "34.186.224.0/19",
           "Description": "Google IP Range"
         }
       ]
@@ -5181,6 +5208,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "34.4.128.0/18",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "34.4.16.0/22",
           "Description": "Google IP Range"
         }
@@ -5236,6 +5272,15 @@
       "IpRanges": [
         {
           "CidrIp": "34.4.80.0/20",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "34.4.96.0/22",
           "Description": "Google IP Range"
         }
       ]
@@ -7872,6 +7917,42 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "35.252.0.0/19",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "35.252.32.0/19",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "35.253.0.0/16",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "35.254.0.0/15",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "64.15.112.0/20",
           "Description": "Google IP Range"
         }
@@ -8538,7 +8619,403 @@
       "IpProtocol": "-1",
       "Ipv6Ranges": [
         {
+          "CidrIpv6": "2600:1902:100::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:10::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:110::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:120::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:130::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:140::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:150::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:160::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:170::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:180::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:190::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:1a0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:1b0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:1c0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:1d0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:1e0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:1f0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:200::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:20::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:210::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:220::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:230::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:250::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:260::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:270::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:280::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:290::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:2a0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:2b0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:2c0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:2d0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:30::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:40::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:50::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:60::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:70::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:80::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:90::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
           "CidrIpv6": "2600:1902::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:a0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:b0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:c0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:d0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:e0::/44",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1902:f0::/44",
           "Description": "Google IPv6 Range"
         }
       ]

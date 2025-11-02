@@ -1,6 +1,6 @@
 #!/bin/bash
 # Google IP Ranges - iptables rules
-# Generated: 2025-11-02 00:45:43 UTC
+# Generated: 2025-11-02 03:39:32 UTC
 # Allow incoming traffic from Google IPs
 
 # IPv4 Rules
@@ -472,6 +472,8 @@ iptables -A INPUT -s 34.177.74.0/23 -j ACCEPT
 iptables -A INPUT -s 34.177.76.0/23 -j ACCEPT
 iptables -A INPUT -s 34.177.78.0/25 -j ACCEPT
 iptables -A INPUT -s 34.177.79.0/24 -j ACCEPT
+iptables -A INPUT -s 34.177.80.0/20 -j ACCEPT
+iptables -A INPUT -s 34.177.96.0/20 -j ACCEPT
 iptables -A INPUT -s 34.178.0.0/16 -j ACCEPT
 iptables -A INPUT -s 34.179.0.0/16 -j ACCEPT
 iptables -A INPUT -s 34.18.0.0/16 -j ACCEPT
@@ -524,6 +526,7 @@ iptables -A INPUT -s 34.185.128.0/17 -j ACCEPT
 iptables -A INPUT -s 34.186.0.0/19 -j ACCEPT
 iptables -A INPUT -s 34.186.128.0/18 -j ACCEPT
 iptables -A INPUT -s 34.186.192.0/19 -j ACCEPT
+iptables -A INPUT -s 34.186.224.0/19 -j ACCEPT
 iptables -A INPUT -s 34.186.32.0/19 -j ACCEPT
 iptables -A INPUT -s 34.186.64.0/18 -j ACCEPT
 iptables -A INPUT -s 34.187.0.0/17 -j ACCEPT
@@ -579,6 +582,7 @@ iptables -A INPUT -s 34.38.0.0/16 -j ACCEPT
 iptables -A INPUT -s 34.39.0.0/17 -j ACCEPT
 iptables -A INPUT -s 34.39.128.0/17 -j ACCEPT
 iptables -A INPUT -s 34.4.0.0/14 -j ACCEPT
+iptables -A INPUT -s 34.4.128.0/18 -j ACCEPT
 iptables -A INPUT -s 34.4.16.0/22 -j ACCEPT
 iptables -A INPUT -s 34.4.24.0/22 -j ACCEPT
 iptables -A INPUT -s 34.4.28.0/22 -j ACCEPT
@@ -586,6 +590,7 @@ iptables -A INPUT -s 34.4.32.0/20 -j ACCEPT
 iptables -A INPUT -s 34.4.48.0/20 -j ACCEPT
 iptables -A INPUT -s 34.4.64.0/20 -j ACCEPT
 iptables -A INPUT -s 34.4.80.0/20 -j ACCEPT
+iptables -A INPUT -s 34.4.96.0/22 -j ACCEPT
 iptables -A INPUT -s 34.40.0.0/17 -j ACCEPT
 iptables -A INPUT -s 34.40.128.0/17 -j ACCEPT
 iptables -A INPUT -s 34.41.0.0/16 -j ACCEPT
@@ -878,6 +883,10 @@ iptables -A INPUT -s 35.247.0.0/17 -j ACCEPT
 iptables -A INPUT -s 35.247.128.0/18 -j ACCEPT
 iptables -A INPUT -s 35.247.192.0/18 -j ACCEPT
 iptables -A INPUT -s 35.252.0.0/14 -j ACCEPT
+iptables -A INPUT -s 35.252.0.0/19 -j ACCEPT
+iptables -A INPUT -s 35.252.32.0/19 -j ACCEPT
+iptables -A INPUT -s 35.253.0.0/16 -j ACCEPT
+iptables -A INPUT -s 35.254.0.0/15 -j ACCEPT
 iptables -A INPUT -s 64.15.112.0/20 -j ACCEPT
 iptables -A INPUT -s 64.233.160.0/19 -j ACCEPT
 iptables -A INPUT -s 66.102.0.0/20 -j ACCEPT
@@ -954,7 +963,51 @@ ip6tables -A INPUT -s 2600:1901:81b0::/44 -j ACCEPT
 ip6tables -A INPUT -s 2600:1901:81c0::/44 -j ACCEPT
 ip6tables -A INPUT -s 2600:1901:81f0::/44 -j ACCEPT
 ip6tables -A INPUT -s 2600:1901::/48 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:100::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:10::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:110::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:120::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:130::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:140::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:150::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:160::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:170::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:180::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:190::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:1a0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:1b0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:1c0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:1d0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:1e0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:1f0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:200::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:20::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:210::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:220::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:230::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:250::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:260::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:270::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:280::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:290::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:2a0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:2b0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:2c0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:2d0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:30::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:40::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:50::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:60::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:70::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:80::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:90::/44 -j ACCEPT
 ip6tables -A INPUT -s 2600:1902::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:a0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:b0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:c0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:d0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:e0::/44 -j ACCEPT
+ip6tables -A INPUT -s 2600:1902:f0::/44 -j ACCEPT
 ip6tables -A INPUT -s 2605:ef80::/32 -j ACCEPT
 ip6tables -A INPUT -s 2606:40::/32 -j ACCEPT
 ip6tables -A INPUT -s 2606:73c0::/32 -j ACCEPT

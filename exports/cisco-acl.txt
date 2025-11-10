@@ -1,8 +1,7 @@
 ! Google IP Ranges - Cisco ACL
-! Generated: 2025-11-09 21:07:19 UTC
+! Generated: 2025-11-10 00:46:02 UTC
 !
 ip access-list extended GOOGLE-IPS-V4
- permit ip 104.154.0.0 0.1.255.255 any
  permit ip 104.154.113.0 0.0.0.255 any
  permit ip 104.154.114.0 0.0.1.255 any
  permit ip 104.154.116.0 0.0.3.255 any
@@ -16,7 +15,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 104.155.128.0 0.0.63.255 any
  permit ip 104.155.192.0 0.0.31.255 any
  permit ip 104.155.224.0 0.0.15.255 any
- permit ip 104.196.0.0 0.3.255.255 any
  permit ip 104.196.0.0 0.0.63.255 any
  permit ip 104.196.128.0 0.0.63.255 any
  permit ip 104.196.192.0 0.0.31.255 any
@@ -47,19 +45,12 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 104.199.72.0 0.0.7.255 any
  permit ip 104.199.80.0 0.0.15.255 any
  permit ip 104.199.96.0 0.0.15.255 any
- permit ip 104.237.160.0 0.0.31.255 any
- permit ip 107.167.160.0 0.0.31.255 any
  permit ip 107.167.160.0 0.0.15.255 any
  permit ip 107.167.176.0 0.0.15.255 any
- permit ip 107.178.192.0 0.0.63.255 any
  permit ip 107.178.208.0 0.0.15.255 any
  permit ip 107.178.240.0 0.0.15.255 any
- permit ip 108.170.192.0 0.0.63.255 any
- permit ip 108.177.0.0 0.0.127.255 any
- permit ip 108.59.80.0 0.0.15.255 any
  permit ip 108.59.80.0 0.0.7.255 any
  permit ip 108.59.88.0 0.0.7.255 any
- permit ip 130.211.0.0 0.0.255.255 any
  permit ip 130.211.112.0 0.0.15.255 any
  permit ip 130.211.128.0 0.0.63.255 any
  permit ip 130.211.16.0 0.0.15.255 any
@@ -73,33 +64,17 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 130.211.8.0 0.0.7.255 any
  permit ip 130.211.96.0 0.0.15.255 any
  permit ip 136.107.0.0 0.0.255.255 any
- permit ip 136.108.0.0 0.3.255.255 any
  permit ip 136.108.0.0 0.0.255.255 any
  permit ip 136.109.0.0 0.0.255.255 any
  permit ip 136.110.0.0 0.0.63.255 any
  permit ip 136.110.128.0 0.0.127.255 any
  permit ip 136.110.64.0 0.0.63.255 any
  permit ip 136.111.0.0 0.0.255.255 any
- permit ip 136.112.0.0 0.7.255.255 any
  permit ip 136.112.0.0 0.3.255.255 any
  permit ip 136.116.0.0 0.0.255.255 any
  permit ip 136.117.0.0 0.0.255.255 any
  permit ip 136.118.0.0 0.0.255.255 any
  permit ip 136.119.0.0 0.0.255.255 any
- permit ip 136.120.0.0 0.0.3.255 any
- permit ip 136.124.0.0 0.1.255.255 any
- permit ip 136.22.160.0 0.0.15.255 any
- permit ip 136.22.176.0 0.0.7.255 any
- permit ip 136.22.184.0 0.0.1.255 any
- permit ip 136.22.186.0 0.0.0.255 any
- permit ip 136.22.2.0 0.0.1.255 any
- permit ip 136.22.4.0 0.0.1.255 any
- permit ip 136.22.8.0 0.0.3.255 any
- permit ip 136.23.48.0 0.0.15.255 any
- permit ip 136.23.64.0 0.0.63.255 any
- permit ip 136.64.0.0 0.31.255.255 any
- permit ip 142.250.0.0 0.1.255.255 any
- permit ip 146.148.0.0 0.0.127.255 any
  permit ip 146.148.112.0 0.0.15.255 any
  permit ip 146.148.16.0 0.0.15.255 any
  permit ip 146.148.2.0 0.0.1.255 any
@@ -108,43 +83,17 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 146.148.64.0 0.0.31.255 any
  permit ip 146.148.8.0 0.0.7.255 any
  permit ip 146.148.96.0 0.0.15.255 any
- permit ip 162.120.128.0 0.0.127.255 any
  permit ip 162.216.148.0 0.0.3.255 any
  permit ip 162.222.176.0 0.0.7.255 any
- permit ip 172.110.32.0 0.0.7.255 any
- permit ip 172.217.0.0 0.0.255.255 any
- permit ip 172.253.0.0 0.0.255.255 any
- permit ip 173.194.0.0 0.0.255.255 any
- permit ip 173.255.112.0 0.0.15.255 any
  permit ip 173.255.112.0 0.0.7.255 any
  permit ip 173.255.120.0 0.0.7.255 any
- permit ip 192.104.160.0 0.0.1.255 any
  permit ip 192.158.28.0 0.0.3.255 any
- permit ip 192.178.0.0 0.1.255.255 any
- permit ip 193.186.4.0 0.0.0.255 any
- permit ip 199.192.112.0 0.0.3.255 any
  permit ip 199.192.115.0 0.0.0.255 any
- permit ip 199.223.232.0 0.0.7.255 any
  permit ip 199.223.232.0 0.0.3.255 any
  permit ip 199.223.236.0 0.0.0.255 any
- permit ip 199.36.154.0 0.0.1.255 any
- permit ip 199.36.156.0 0.0.0.255 any
- permit ip 207.175.0.0 0.0.255.255 any
- permit ip 207.223.160.0 0.0.15.255 any
- permit ip 208.117.224.0 0.0.31.255 any
- permit ip 208.65.152.0 0.0.3.255 any
- permit ip 208.68.108.0 0.0.3.255 any
- permit ip 208.81.188.0 0.0.3.255 any
- permit ip 209.85.128.0 0.0.127.255 any
- permit ip 216.239.32.0 0.0.31.255 any
- permit ip 216.252.220.0 0.0.3.255 any
- permit ip 216.58.192.0 0.0.31.255 any
- permit ip 216.73.80.0 0.0.15.255 any
  permit ip 23.236.48.0 0.0.15.255 any
- permit ip 23.251.128.0 0.0.31.255 any
  permit ip 23.251.128.0 0.0.15.255 any
  permit ip 23.251.144.0 0.0.15.255 any
- permit ip 34.0.0.0 0.1.255.255 any
  permit ip 34.0.0.0 0.0.15.255 any
  permit ip 34.0.128.0 0.0.31.255 any
  permit ip 34.0.16.0 0.0.15.255 any
@@ -269,7 +218,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 34.127.186.0 0.0.1.255 any
  permit ip 34.127.188.0 0.0.1.255 any
  permit ip 34.127.190.0 0.0.1.255 any
- permit ip 34.128.0.0 0.63.255.255 any
  permit ip 34.128.128.0 0.0.63.255 any
  permit ip 34.128.208.0 0.0.15.255 any
  permit ip 34.128.224.0 0.0.15.255 any
@@ -433,7 +381,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 34.158.32.0 0.0.31.255 any
  permit ip 34.158.64.0 0.0.63.255 any
  permit ip 34.159.0.0 0.0.255.255 any
- permit ip 34.16.0.0 0.15.255.255 any
  permit ip 34.16.0.0 0.0.127.255 any
  permit ip 34.16.128.0 0.0.127.255 any
  permit ip 34.160.0.0 0.0.255.255 any
@@ -531,7 +478,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 34.187.128.0 0.0.127.255 any
  permit ip 34.19.0.0 0.0.127.255 any
  permit ip 34.19.128.0 0.0.127.255 any
- permit ip 34.2.0.0 0.0.255.255 any
  permit ip 34.2.0.0 0.0.15.255 any
  permit ip 34.2.128.0 0.0.127.255 any
  permit ip 34.2.16.0 0.0.15.255 any
@@ -554,19 +500,11 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 34.26.0.0 0.0.255.255 any
  permit ip 34.27.0.0 0.0.255.255 any
  permit ip 34.28.0.0 0.3.255.255 any
- permit ip 34.3.0.0 0.0.1.255 any
- permit ip 34.3.16.0 0.0.15.255 any
  permit ip 34.3.2.0 0.0.0.31 any
- permit ip 34.3.3.0 0.0.0.255 any
- permit ip 34.3.32.0 0.0.31.255 any
  permit ip 34.3.32.0 0.0.15.255 any
- permit ip 34.3.4.0 0.0.0.255 any
- permit ip 34.3.64.0 0.0.63.255 any
  permit ip 34.3.76.0 0.0.3.255 any
- permit ip 34.3.8.0 0.0.7.255 any
  permit ip 34.3.80.0 0.0.15.255 any
  permit ip 34.3.96.0 0.0.15.255 any
- permit ip 34.32.0.0 0.31.255.255 any
  permit ip 34.32.0.0 0.0.127.255 any
  permit ip 34.32.128.0 0.0.127.255 any
  permit ip 34.33.0.0 0.0.255.255 any
@@ -579,7 +517,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 34.38.0.0 0.0.255.255 any
  permit ip 34.39.0.0 0.0.127.255 any
  permit ip 34.39.128.0 0.0.127.255 any
- permit ip 34.4.0.0 0.3.255.255 any
  permit ip 34.4.128.0 0.0.63.255 any
  permit ip 34.4.16.0 0.0.3.255 any
  permit ip 34.4.24.0 0.0.3.255 any
@@ -617,7 +554,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 34.60.0.0 0.1.255.255 any
  permit ip 34.62.0.0 0.0.255.255 any
  permit ip 34.63.0.0 0.0.255.255 any
- permit ip 34.64.0.0 0.63.255.255 any
  permit ip 34.64.128.0 0.0.3.255 any
  permit ip 34.64.132.0 0.0.3.255 any
  permit ip 34.64.136.0 0.0.7.255 any
@@ -637,7 +573,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 34.73.0.0 0.0.255.255 any
  permit ip 34.74.0.0 0.1.255.255 any
  permit ip 34.76.0.0 0.3.255.255 any
- permit ip 34.8.0.0 0.7.255.255 any
  permit ip 34.8.0.0 0.0.255.255 any
  permit ip 34.80.0.0 0.1.255.255 any
  permit ip 34.82.0.0 0.1.255.255 any
@@ -664,7 +599,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 34.97.0.0 0.0.255.255 any
  permit ip 34.98.128.0 0.0.7.255 any
  permit ip 34.98.64.0 0.0.63.255 any
- permit ip 35.184.0.0 0.7.255.255 any
  permit ip 35.184.0.0 0.0.255.255 any
  permit ip 35.185.0.0 0.0.127.255 any
  permit ip 35.185.128.0 0.0.31.255 any
@@ -696,31 +630,25 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 35.190.192.0 0.0.31.255 any
  permit ip 35.190.224.0 0.0.15.255 any
  permit ip 35.190.64.0 0.0.31.255 any
- permit ip 35.192.0.0 0.3.255.255 any
  permit ip 35.192.0.0 0.1.255.255 any
  permit ip 35.194.0.0 0.0.63.255 any
  permit ip 35.194.128.0 0.0.127.255 any
  permit ip 35.194.64.0 0.0.31.255 any
  permit ip 35.194.96.0 0.0.31.255 any
  permit ip 35.195.0.0 0.0.255.255 any
- permit ip 35.196.0.0 0.1.255.255 any
  permit ip 35.196.0.0 0.0.255.255 any
  permit ip 35.197.0.0 0.0.127.255 any
  permit ip 35.197.128.0 0.0.31.255 any
  permit ip 35.197.160.0 0.0.31.255 any
  permit ip 35.197.192.0 0.0.63.255 any
- permit ip 35.198.0.0 0.0.255.255 any
  permit ip 35.198.0.0 0.0.63.255 any
  permit ip 35.198.128.0 0.0.63.255 any
  permit ip 35.198.192.0 0.0.63.255 any
  permit ip 35.198.64.0 0.0.63.255 any
- permit ip 35.199.0.0 0.0.127.255 any
  permit ip 35.199.0.0 0.0.63.255 any
- permit ip 35.199.128.0 0.0.63.255 any
  permit ip 35.199.144.0 0.0.15.255 any
  permit ip 35.199.160.0 0.0.31.255 any
  permit ip 35.199.64.0 0.0.63.255 any
- permit ip 35.200.0.0 0.7.255.255 any
  permit ip 35.200.0.0 0.0.127.255 any
  permit ip 35.200.128.0 0.0.127.255 any
  permit ip 35.201.0.0 0.0.31.255 any
@@ -745,7 +673,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 35.207.128.0 0.0.63.255 any
  permit ip 35.207.192.0 0.0.63.255 any
  permit ip 35.207.64.0 0.0.63.255 any
- permit ip 35.208.0.0 0.15.255.255 any
  permit ip 35.208.0.0 0.1.255.255 any
  permit ip 35.210.0.0 0.0.255.255 any
  permit ip 35.211.0.0 0.0.255.255 any
@@ -795,7 +722,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 35.221.128.0 0.0.127.255 any
  permit ip 35.221.64.0 0.0.63.255 any
  permit ip 35.222.0.0 0.1.255.255 any
- permit ip 35.224.0.0 0.15.255.255 any
  permit ip 35.224.0.0 0.1.255.255 any
  permit ip 35.226.0.0 0.0.255.255 any
  permit ip 35.227.0.0 0.0.127.255 any
@@ -834,7 +760,6 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 35.236.192.0 0.0.63.255 any
  permit ip 35.237.0.0 0.0.255.255 any
  permit ip 35.238.0.0 0.1.255.255 any
- permit ip 35.240.0.0 0.7.255.255 any
  permit ip 35.240.0.0 0.0.127.255 any
  permit ip 35.240.128.0 0.0.127.255 any
  permit ip 35.241.0.0 0.0.63.255 any
@@ -880,38 +805,19 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 35.247.0.0 0.0.127.255 any
  permit ip 35.247.128.0 0.0.63.255 any
  permit ip 35.247.192.0 0.0.63.255 any
- permit ip 35.252.0.0 0.3.255.255 any
  permit ip 35.252.0.0 0.0.31.255 any
  permit ip 35.252.32.0 0.0.31.255 any
  permit ip 35.253.0.0 0.0.255.255 any
  permit ip 35.254.0.0 0.1.255.255 any
- permit ip 64.15.112.0 0.0.15.255 any
- permit ip 64.233.160.0 0.0.31.255 any
- permit ip 66.102.0.0 0.0.15.255 any
- permit ip 66.249.64.0 0.0.31.255 any
- permit ip 70.32.128.0 0.0.31.255 any
- permit ip 72.14.192.0 0.0.63.255 any
- permit ip 74.114.24.0 0.0.7.255 any
- permit ip 74.125.0.0 0.0.255.255 any
- permit ip 8.228.0.0 0.3.255.255 any
- permit ip 8.232.0.0 0.3.255.255 any
- permit ip 8.236.0.0 0.1.255.255 any
- permit ip 8.34.208.0 0.0.15.255 any
  permit ip 8.34.208.0 0.0.1.255 any
  permit ip 8.34.210.0 0.0.0.255 any
  permit ip 8.34.211.0 0.0.0.255 any
  permit ip 8.34.212.0 0.0.3.255 any
  permit ip 8.34.216.0 0.0.3.255 any
  permit ip 8.34.220.0 0.0.3.255 any
- permit ip 8.35.192.0 0.0.15.255 any
  permit ip 8.35.192.0 0.0.7.255 any
- permit ip 8.8.4.0 0.0.0.255 any
- permit ip 8.8.8.0 0.0.0.255 any
 !
 ipv6 access-list GOOGLE-IPS-V6
- permit ipv6 2001:4860::/32 any
- permit ipv6 2404:6800::/32 any
- permit ipv6 2404:f340::/32 any
  permit ipv6 2600:1900:4000::/44 any
  permit ipv6 2600:1900:4010::/44 any
  permit ipv6 2600:1900:4020::/44 any
@@ -946,7 +852,6 @@ ipv6 access-list GOOGLE-IPS-V6
  permit ipv6 2600:1900:42e0::/44 any
  permit ipv6 2600:1900:5400::/44 any
  permit ipv6 2600:1900:8000::/44 any
- permit ipv6 2600:1900::/28 any
  permit ipv6 2600:1901:4010::/44 any
  permit ipv6 2600:1901:8100::/44 any
  permit ipv6 2600:1901:8110::/44 any
@@ -1006,15 +911,4 @@ ipv6 access-list GOOGLE-IPS-V6
  permit ipv6 2600:1902:d0::/44 any
  permit ipv6 2600:1902:e0::/44 any
  permit ipv6 2600:1902:f0::/44 any
- permit ipv6 2605:ef80::/32 any
- permit ipv6 2606:40::/32 any
- permit ipv6 2606:73c0::/32 any
- permit ipv6 2607:1c0:241:40::/60 any
- permit ipv6 2607:1c0:300::/40 any
- permit ipv6 2607:f8b0::/32 any
- permit ipv6 2620:11a:a000::/40 any
- permit ipv6 2620:120:e000::/40 any
- permit ipv6 2800:3f0::/32 any
- permit ipv6 2a00:1450::/32 any
- permit ipv6 2c0f:fb50::/32 any
 !

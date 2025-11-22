@@ -1,5 +1,5 @@
 # Google IP Ranges - MikroTik RouterOS
-# Generated: 2025-11-22 03:31:16 UTC
+# Generated: 2025-11-22 06:12:27 UTC
 
 # Create address list
 /ip firewall address-list
@@ -384,6 +384,8 @@ add list=google-ips address=34.157.0.0/21 comment="Google IPv4"
 add list=google-ips address=34.157.112.0/21 comment="Google IPv4"
 add list=google-ips address=34.157.12.0/22 comment="Google IPv4"
 add list=google-ips address=34.157.121.0/24 comment="Google IPv4"
+add list=google-ips address=34.157.122.0/25 comment="Google IPv4"
+add list=google-ips address=34.157.122.128/25 comment="Google IPv4"
 add list=google-ips address=34.157.124.0/23 comment="Google IPv4"
 add list=google-ips address=34.157.126.0/23 comment="Google IPv4"
 add list=google-ips address=34.157.128.0/21 comment="Google IPv4"
@@ -403,6 +405,8 @@ add list=google-ips address=34.157.210.0/23 comment="Google IPv4"
 add list=google-ips address=34.157.212.0/23 comment="Google IPv4"
 add list=google-ips address=34.157.215.0/24 comment="Google IPv4"
 add list=google-ips address=34.157.216.0/23 comment="Google IPv4"
+add list=google-ips address=34.157.218.0/25 comment="Google IPv4"
+add list=google-ips address=34.157.218.128/25 comment="Google IPv4"
 add list=google-ips address=34.157.220.0/22 comment="Google IPv4"
 add list=google-ips address=34.157.224.0/20 comment="Google IPv4"
 add list=google-ips address=34.157.240.0/21 comment="Google IPv4"
@@ -895,6 +899,10 @@ add list=google-ips address=72.14.192.0/18 comment="Google IPv4"
 add list=google-ips address=74.114.24.0/21 comment="Google IPv4"
 add list=google-ips address=74.125.0.0/16 comment="Google IPv4"
 add list=google-ips address=8.228.0.0/14 comment="Google IPv4"
+add list=google-ips address=8.228.0.0/19 comment="Google IPv4"
+add list=google-ips address=8.228.128.0/18 comment="Google IPv4"
+add list=google-ips address=8.228.32.0/19 comment="Google IPv4"
+add list=google-ips address=8.228.64.0/18 comment="Google IPv4"
 add list=google-ips address=8.232.0.0/14 comment="Google IPv4"
 add list=google-ips address=8.236.0.0/15 comment="Google IPv4"
 add list=google-ips address=8.34.208.0/20 comment="Google IPv4"

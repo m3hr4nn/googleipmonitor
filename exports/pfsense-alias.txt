@@ -1,5 +1,5 @@
 # Google IP Ranges - pfSense Alias
-# Generated: 2026-01-17 00:45:24 UTC
+# Generated: 2026-01-17 03:48:46 UTC
 # Import via Firewall > Aliases > Import
 
 # IPv4 Networks
@@ -901,6 +901,8 @@
 8.228.0.0/14
 8.228.0.0/19
 8.228.128.0/18
+8.228.192.0/19
+8.228.224.0/20
 8.228.32.0/19
 8.228.64.0/18
 8.232.0.0/14

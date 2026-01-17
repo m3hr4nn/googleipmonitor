@@ -897,6 +897,8 @@ IPv4,74.125.0.0/16,Google IP Range
 IPv4,8.228.0.0/14,Google IP Range
 IPv4,8.228.0.0/19,Google IP Range
 IPv4,8.228.128.0/18,Google IP Range
+IPv4,8.228.192.0/19,Google IP Range
+IPv4,8.228.224.0/20,Google IP Range
 IPv4,8.228.32.0/19,Google IP Range
 IPv4,8.228.64.0/18,Google IP Range
 IPv4,8.232.0.0/14,Google IP Range

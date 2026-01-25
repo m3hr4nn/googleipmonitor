@@ -12577,7 +12577,7 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:100::/44",
+        "sourceAddressPrefix": "2605:ef80::/32",
         "destinationAddressPrefix": "*",
         "access": "Allow",
         "priority": 2052,
@@ -12590,7 +12590,7 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:10::/44",
+        "sourceAddressPrefix": "2606:40::/32",
         "destinationAddressPrefix": "*",
         "access": "Allow",
         "priority": 2053,
@@ -12603,7 +12603,7 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:110::/44",
+        "sourceAddressPrefix": "2606:73c0::/32",
         "destinationAddressPrefix": "*",
         "access": "Allow",
         "priority": 2054,
@@ -12616,7 +12616,7 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:120::/44",
+        "sourceAddressPrefix": "2607:1c0:241:40::/60",
         "destinationAddressPrefix": "*",
         "access": "Allow",
         "priority": 2055,
@@ -12629,7 +12629,7 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:130::/44",
+        "sourceAddressPrefix": "2607:1c0:300::/40",
         "destinationAddressPrefix": "*",
         "access": "Allow",
         "priority": 2056,
@@ -12642,7 +12642,7 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:140::/44",
+        "sourceAddressPrefix": "2607:f8b0::/32",
         "destinationAddressPrefix": "*",
         "access": "Allow",
         "priority": 2057,
@@ -12655,7 +12655,7 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:150::/44",
+        "sourceAddressPrefix": "2620:11a:a000::/40",
         "destinationAddressPrefix": "*",
         "access": "Allow",
         "priority": 2058,
@@ -12668,7 +12668,7 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:160::/44",
+        "sourceAddressPrefix": "2620:120:e000::/40",
         "destinationAddressPrefix": "*",
         "access": "Allow",
         "priority": 2059,
@@ -12681,7 +12681,7 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:170::/44",
+        "sourceAddressPrefix": "2800:3f0::/32",
         "destinationAddressPrefix": "*",
         "access": "Allow",
         "priority": 2060,
@@ -12694,7 +12694,7 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:180::/44",
+        "sourceAddressPrefix": "2a00:1450::/32",
         "destinationAddressPrefix": "*",
         "access": "Allow",
         "priority": 2061,
@@ -12707,595 +12707,10 @@
         "protocol": "*",
         "sourcePortRange": "*",
         "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:190::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2062,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_64",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:1a0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2063,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_65",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:1b0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2064,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_66",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:1c0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2065,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_67",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:1d0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2066,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_68",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:1e0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2067,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_69",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:1f0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2068,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_70",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:200::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2069,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_71",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:20::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2070,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_72",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:210::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2071,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_73",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:220::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2072,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_74",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:230::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2073,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_75",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:250::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2074,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_76",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:260::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2075,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_77",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:270::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2076,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_78",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:280::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2077,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_79",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:290::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2078,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_80",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:2a0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2079,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_81",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:2b0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2080,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_82",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:2c0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2081,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_83",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:2d0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2082,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_84",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:30::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2083,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_85",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:40::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2084,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_86",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:50::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2085,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_87",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:60::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2086,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_88",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:70::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2087,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_89",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:80::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2088,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_90",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:90::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2089,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_91",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2090,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_92",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:a0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2091,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_93",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:b0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2092,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_94",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:c0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2093,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_95",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:d0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2094,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_96",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:e0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2095,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_97",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2600:1902:f0::/44",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2096,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_98",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2605:ef80::/32",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2097,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_99",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2606:40::/32",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2098,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_100",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2606:73c0::/32",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2099,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_101",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2607:1c0:241:40::/60",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2100,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_102",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2607:1c0:300::/40",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2101,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_103",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2607:f8b0::/32",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2102,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_104",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2620:11a:a000::/40",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2103,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_105",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2620:120:e000::/40",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2104,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_106",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2800:3f0::/32",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2105,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_107",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
-        "sourceAddressPrefix": "2a00:1450::/32",
-        "destinationAddressPrefix": "*",
-        "access": "Allow",
-        "priority": 2106,
-        "direction": "Inbound"
-      }
-    },
-    {
-      "name": "AllowGoogleIPv6_108",
-      "properties": {
-        "protocol": "*",
-        "sourcePortRange": "*",
-        "destinationPortRange": "*",
         "sourceAddressPrefix": "2c0f:fb50::/32",
         "destinationAddressPrefix": "*",
         "access": "Allow",
-        "priority": 2107,
+        "priority": 2062,
         "direction": "Inbound"
       }
     }

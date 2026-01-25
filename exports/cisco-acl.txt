@@ -1,5 +1,5 @@
 ! Google IP Ranges - Cisco ACL
-! Generated: 2026-01-24 21:08:05 UTC
+! Generated: 2026-01-25 00:54:38 UTC
 !
 ip access-list extended GOOGLE-IPS-V4
  permit ip 104.154.0.0 0.1.255.255 any
@@ -971,51 +971,6 @@ ipv6 access-list GOOGLE-IPS-V6
  permit ipv6 2600:1901:81c0::/44 any
  permit ipv6 2600:1901:81f0::/44 any
  permit ipv6 2600:1901::/48 any
- permit ipv6 2600:1902:100::/44 any
- permit ipv6 2600:1902:10::/44 any
- permit ipv6 2600:1902:110::/44 any
- permit ipv6 2600:1902:120::/44 any
- permit ipv6 2600:1902:130::/44 any
- permit ipv6 2600:1902:140::/44 any
- permit ipv6 2600:1902:150::/44 any
- permit ipv6 2600:1902:160::/44 any
- permit ipv6 2600:1902:170::/44 any
- permit ipv6 2600:1902:180::/44 any
- permit ipv6 2600:1902:190::/44 any
- permit ipv6 2600:1902:1a0::/44 any
- permit ipv6 2600:1902:1b0::/44 any
- permit ipv6 2600:1902:1c0::/44 any
- permit ipv6 2600:1902:1d0::/44 any
- permit ipv6 2600:1902:1e0::/44 any
- permit ipv6 2600:1902:1f0::/44 any
- permit ipv6 2600:1902:200::/44 any
- permit ipv6 2600:1902:20::/44 any
- permit ipv6 2600:1902:210::/44 any
- permit ipv6 2600:1902:220::/44 any
- permit ipv6 2600:1902:230::/44 any
- permit ipv6 2600:1902:250::/44 any
- permit ipv6 2600:1902:260::/44 any
- permit ipv6 2600:1902:270::/44 any
- permit ipv6 2600:1902:280::/44 any
- permit ipv6 2600:1902:290::/44 any
- permit ipv6 2600:1902:2a0::/44 any
- permit ipv6 2600:1902:2b0::/44 any
- permit ipv6 2600:1902:2c0::/44 any
- permit ipv6 2600:1902:2d0::/44 any
- permit ipv6 2600:1902:30::/44 any
- permit ipv6 2600:1902:40::/44 any
- permit ipv6 2600:1902:50::/44 any
- permit ipv6 2600:1902:60::/44 any
- permit ipv6 2600:1902:70::/44 any
- permit ipv6 2600:1902:80::/44 any
- permit ipv6 2600:1902:90::/44 any
- permit ipv6 2600:1902::/44 any
- permit ipv6 2600:1902:a0::/44 any
- permit ipv6 2600:1902:b0::/44 any
- permit ipv6 2600:1902:c0::/44 any
- permit ipv6 2600:1902:d0::/44 any
- permit ipv6 2600:1902:e0::/44 any
- permit ipv6 2600:1902:f0::/44 any
  permit ipv6 2605:ef80::/32 any
  permit ipv6 2606:40::/32 any
  permit ipv6 2606:73c0::/32 any

@@ -1,6 +1,6 @@
 #!/bin/bash
 # Google IP Ranges - iptables rules
-# Generated: 2026-03-18 04:48:53 UTC
+# Generated: 2026-03-18 06:45:55 UTC
 # Allow incoming traffic from Google IPs
 
 # IPv4 Rules

@@ -8340,6 +8340,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "8.230.96.0/19",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "8.232.0.0/14",
           "Description": "Google IP Range"
         }

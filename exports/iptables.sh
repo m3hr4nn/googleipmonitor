@@ -1,6 +1,6 @@
 #!/bin/bash
 # Google IP Ranges - iptables rules
-# Generated: 2026-05-16 07:43:50 UTC
+# Generated: 2026-05-16 10:05:19 UTC
 # Allow incoming traffic from Google IPs
 
 # IPv4 Rules
@@ -100,6 +100,8 @@ iptables -A INPUT -s 136.22.8.0/22 -j ACCEPT
 iptables -A INPUT -s 136.23.48.0/20 -j ACCEPT
 iptables -A INPUT -s 136.23.64.0/18 -j ACCEPT
 iptables -A INPUT -s 136.64.0.0/11 -j ACCEPT
+iptables -A INPUT -s 136.64.0.0/15 -j ACCEPT
+iptables -A INPUT -s 136.66.0.0/15 -j ACCEPT
 iptables -A INPUT -s 142.250.0.0/15 -j ACCEPT
 iptables -A INPUT -s 146.148.0.0/17 -j ACCEPT
 iptables -A INPUT -s 146.148.112.0/20 -j ACCEPT
@@ -539,6 +541,8 @@ iptables -A INPUT -s 34.183.76.0/22 -j ACCEPT
 iptables -A INPUT -s 34.183.8.0/23 -j ACCEPT
 iptables -A INPUT -s 34.183.80.0/24 -j ACCEPT
 iptables -A INPUT -s 34.183.81.0/24 -j ACCEPT
+iptables -A INPUT -s 34.183.82.0/24 -j ACCEPT
+iptables -A INPUT -s 34.183.84.0/22 -j ACCEPT
 iptables -A INPUT -s 34.184.0.0/24 -j ACCEPT
 iptables -A INPUT -s 34.184.1.0/24 -j ACCEPT
 iptables -A INPUT -s 34.184.12.0/22 -j ACCEPT
@@ -579,6 +583,8 @@ iptables -A INPUT -s 34.184.75.0/24 -j ACCEPT
 iptables -A INPUT -s 34.184.76.0/22 -j ACCEPT
 iptables -A INPUT -s 34.184.8.0/23 -j ACCEPT
 iptables -A INPUT -s 34.184.80.0/24 -j ACCEPT
+iptables -A INPUT -s 34.184.81.0/24 -j ACCEPT
+iptables -A INPUT -s 34.184.84.0/22 -j ACCEPT
 iptables -A INPUT -s 34.185.128.0/17 -j ACCEPT
 iptables -A INPUT -s 34.186.0.0/19 -j ACCEPT
 iptables -A INPUT -s 34.186.128.0/18 -j ACCEPT
@@ -975,6 +981,9 @@ iptables -A INPUT -s 8.231.48.0/20 -j ACCEPT
 iptables -A INPUT -s 8.231.64.0/18 -j ACCEPT
 iptables -A INPUT -s 8.232.0.0/14 -j ACCEPT
 iptables -A INPUT -s 8.232.0.0/15 -j ACCEPT
+iptables -A INPUT -s 8.234.128.0/17 -j ACCEPT
+iptables -A INPUT -s 8.235.0.0/17 -j ACCEPT
+iptables -A INPUT -s 8.235.128.0/17 -j ACCEPT
 iptables -A INPUT -s 8.236.0.0/15 -j ACCEPT
 iptables -A INPUT -s 8.34.208.0/20 -j ACCEPT
 iptables -A INPUT -s 8.34.208.0/23 -j ACCEPT

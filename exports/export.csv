@@ -94,7 +94,6 @@ IPv4,136.22.4.0/23,Google IP Range
 IPv4,136.22.8.0/22,Google IP Range
 IPv4,136.23.48.0/20,Google IP Range
 IPv4,136.23.64.0/18,Google IP Range
-IPv4,136.23.64.0/19,Google IP Range
 IPv4,136.64.0.0/11,Google IP Range
 IPv4,136.64.0.0/15,Google IP Range
 IPv4,136.66.0.0/15,Google IP Range
@@ -102,6 +101,9 @@ IPv4,136.68.0.0/16,Google IP Range
 IPv4,136.69.0.0/17,Google IP Range
 IPv4,136.69.128.0/17,Google IP Range
 IPv4,136.70.0.0/18,Google IP Range
+IPv4,136.70.128.0/17,Google IP Range
+IPv4,136.70.64.0/18,Google IP Range
+IPv4,136.71.0.0/16,Google IP Range
 IPv4,142.250.0.0/15,Google IP Range
 IPv4,146.148.0.0/17,Google IP Range
 IPv4,146.148.112.0/20,Google IP Range

@@ -1,6 +1,6 @@
 #!/bin/bash
 # Google IP Ranges - iptables rules
-# Generated: 2026-06-17 19:53:04 UTC
+# Generated: 2026-06-17 22:27:11 UTC
 # Allow incoming traffic from Google IPs
 
 # IPv4 Rules
@@ -89,6 +89,7 @@ iptables -A INPUT -s 136.117.0.0/16 -j ACCEPT
 iptables -A INPUT -s 136.118.0.0/16 -j ACCEPT
 iptables -A INPUT -s 136.119.0.0/16 -j ACCEPT
 iptables -A INPUT -s 136.120.0.0/22 -j ACCEPT
+iptables -A INPUT -s 136.121.8.0/21 -j ACCEPT
 iptables -A INPUT -s 136.124.0.0/15 -j ACCEPT
 iptables -A INPUT -s 136.22.160.0/20 -j ACCEPT
 iptables -A INPUT -s 136.22.176.0/21 -j ACCEPT

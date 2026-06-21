@@ -1,5 +1,5 @@
 # Google IP Ranges - MikroTik RouterOS
-# Generated: 2026-06-21 02:12:23 UTC
+# Generated: 2026-06-21 07:21:16 UTC
 
 # Create address list
 /ip firewall address-list
@@ -109,6 +109,22 @@ add list=google-ips address=136.70.0.0/18 comment="Google IPv4"
 add list=google-ips address=136.70.128.0/17 comment="Google IPv4"
 add list=google-ips address=136.70.64.0/18 comment="Google IPv4"
 add list=google-ips address=136.71.0.0/16 comment="Google IPv4"
+add list=google-ips address=136.80.0.0/16 comment="Google IPv4"
+add list=google-ips address=136.81.0.0/16 comment="Google IPv4"
+add list=google-ips address=136.82.0.0/16 comment="Google IPv4"
+add list=google-ips address=136.83.0.0/18 comment="Google IPv4"
+add list=google-ips address=136.83.128.0/17 comment="Google IPv4"
+add list=google-ips address=136.83.64.0/18 comment="Google IPv4"
+add list=google-ips address=136.84.0.0/16 comment="Google IPv4"
+add list=google-ips address=136.85.0.0/17 comment="Google IPv4"
+add list=google-ips address=136.85.128.0/17 comment="Google IPv4"
+add list=google-ips address=136.86.0.0/17 comment="Google IPv4"
+add list=google-ips address=136.86.128.0/17 comment="Google IPv4"
+add list=google-ips address=136.87.0.0/16 comment="Google IPv4"
+add list=google-ips address=136.88.0.0/15 comment="Google IPv4"
+add list=google-ips address=136.90.0.0/16 comment="Google IPv4"
+add list=google-ips address=136.91.0.0/16 comment="Google IPv4"
+add list=google-ips address=136.92.0.0/17 comment="Google IPv4"
 add list=google-ips address=142.250.0.0/15 comment="Google IPv4"
 add list=google-ips address=146.148.0.0/17 comment="Google IPv4"
 add list=google-ips address=146.148.112.0/20 comment="Google IPv4"
@@ -605,6 +621,7 @@ add list=google-ips address=34.184.84.0/22 comment="Google IPv4"
 add list=google-ips address=34.184.88.0/21 comment="Google IPv4"
 add list=google-ips address=34.184.96.0/21 comment="Google IPv4"
 add list=google-ips address=34.185.128.0/17 comment="Google IPv4"
+add list=google-ips address=34.185.64.0/18 comment="Google IPv4"
 add list=google-ips address=34.186.0.0/19 comment="Google IPv4"
 add list=google-ips address=34.186.128.0/18 comment="Google IPv4"
 add list=google-ips address=34.186.192.0/19 comment="Google IPv4"

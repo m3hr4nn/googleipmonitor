@@ -960,6 +960,150 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "136.80.0.0/16",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.81.0.0/16",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.82.0.0/16",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.83.0.0/18",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.83.128.0/17",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.83.64.0/18",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.84.0.0/16",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.85.0.0/17",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.85.128.0/17",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.86.0.0/17",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.86.128.0/17",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.87.0.0/16",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.88.0.0/15",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.90.0.0/16",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.91.0.0/16",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "136.92.0.0/17",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "142.250.0.0/15",
           "Description": "Google IP Range"
         }
@@ -5416,6 +5560,15 @@
       "IpRanges": [
         {
           "CidrIp": "34.185.128.0/17",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "34.185.64.0/18",
           "Description": "Google IP Range"
         }
       ]

@@ -1,5 +1,5 @@
 # Google IP Ranges - pfSense Alias
-# Generated: 2026-06-28 21:50:31 UTC
+# Generated: 2026-06-29 02:03:27 UTC
 # Import via Firewall > Aliases > Import
 
 # IPv4 Networks

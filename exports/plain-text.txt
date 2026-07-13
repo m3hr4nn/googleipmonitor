@@ -1,5 +1,5 @@
 Google IP Ranges - Plain Text
-Generated: 2026-07-13 08:40:57 UTC
+Generated: 2026-07-13 11:46:14 UTC
 Total IPv4: 1081
 Total IPv6: 63
 

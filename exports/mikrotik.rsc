@@ -1,5 +1,5 @@
 # Google IP Ranges - MikroTik RouterOS
-# Generated: 2026-07-14 18:55:47 UTC
+# Generated: 2026-07-14 21:43:07 UTC
 
 # Create address list
 /ip firewall address-list
@@ -168,6 +168,7 @@ add list=google-ips address=199.223.232.0/22 comment="Google IPv4"
 add list=google-ips address=199.223.236.0/24 comment="Google IPv4"
 add list=google-ips address=199.36.154.0/23 comment="Google IPv4"
 add list=google-ips address=199.36.156.0/24 comment="Google IPv4"
+add list=google-ips address=200.226.0.0/16 comment="Google IPv4"
 add list=google-ips address=207.175.0.0/16 comment="Google IPv4"
 add list=google-ips address=207.223.160.0/20 comment="Google IPv4"
 add list=google-ips address=208.117.224.0/19 comment="Google IPv4"

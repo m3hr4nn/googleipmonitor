@@ -1,6 +1,6 @@
 Google IP Ranges - Plain Text
-Generated: 2026-07-19 18:43:28 UTC
-Total IPv4: 1088
+Generated: 2026-07-19 21:38:12 UTC
+Total IPv4: 1089
 Total IPv6: 63
 
 === IPv4 Ranges ===
@@ -98,6 +98,7 @@ Total IPv6: 63
 136.22.2.0/23
 136.22.4.0/23
 136.22.8.0/22
+136.23.39.0/24
 136.23.48.0/20
 136.23.64.0/18
 136.64.0.0/11

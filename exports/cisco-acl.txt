@@ -1,5 +1,5 @@
 ! Google IP Ranges - Cisco ACL
-! Generated: 2026-07-19 18:43:28 UTC
+! Generated: 2026-07-19 21:38:12 UTC
 !
 ip access-list extended GOOGLE-IPS-V4
  permit ip 104.154.0.0 0.1.255.255 any
@@ -96,6 +96,7 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 136.22.2.0 0.0.1.255 any
  permit ip 136.22.4.0 0.0.1.255 any
  permit ip 136.22.8.0 0.0.3.255 any
+ permit ip 136.23.39.0 0.0.0.255 any
  permit ip 136.23.48.0 0.0.15.255 any
  permit ip 136.23.64.0 0.0.63.255 any
  permit ip 136.64.0.0 0.31.255.255 any

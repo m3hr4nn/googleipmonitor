@@ -852,6 +852,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "136.23.39.0/24",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "136.23.48.0/20",
           "Description": "Google IP Range"
         }

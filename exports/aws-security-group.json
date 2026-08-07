@@ -10122,6 +10122,33 @@
       "IpProtocol": "-1",
       "Ipv6Ranges": [
         {
+          "CidrIpv6": "2600:1900:4334::/46",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1900:4338::/45",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2600:1900:4340::/46",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
           "CidrIpv6": "2600:1900:5400::/44",
           "Description": "Google IPv6 Range"
         }

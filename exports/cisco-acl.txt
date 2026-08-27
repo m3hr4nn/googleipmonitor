@@ -1,5 +1,5 @@
 ! Google IP Ranges - Cisco ACL
-! Generated: 2026-08-26 19:26:13 UTC
+! Generated: 2026-08-27 00:18:25 UTC
 !
 ip access-list extended GOOGLE-IPS-V4
  permit ip 104.154.0.0 0.1.255.255 any
@@ -147,6 +147,8 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 146.148.64.0 0.0.31.255 any
  permit ip 146.148.8.0 0.0.7.255 any
  permit ip 146.148.96.0 0.0.15.255 any
+ permit ip 152.238.0.0 0.0.255.255 any
+ permit ip 152.239.128.0 0.0.127.255 any
  permit ip 162.120.128.0 0.0.127.255 any
  permit ip 162.216.148.0 0.0.3.255 any
  permit ip 162.222.176.0 0.0.7.255 any
@@ -157,6 +159,35 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 173.255.112.0 0.0.15.255 any
  permit ip 173.255.112.0 0.0.7.255 any
  permit ip 173.255.120.0 0.0.7.255 any
+ permit ip 177.176.0.0 0.0.255.255 any
+ permit ip 177.178.0.0 0.1.255.255 any
+ permit ip 177.208.0.0 0.1.255.255 any
+ permit ip 179.193.128.0 0.0.127.255 any
+ permit ip 179.199.0.0 0.0.127.255 any
+ permit ip 179.67.0.0 0.0.127.255 any
+ permit ip 179.69.128.0 0.0.127.255 any
+ permit ip 186.242.0.0 0.0.127.255 any
+ permit ip 186.245.0.0 0.0.255.255 any
+ permit ip 187.126.128.0 0.0.127.255 any
+ permit ip 187.78.0.0 0.0.127.255 any
+ permit ip 187.79.0.0 0.0.127.255 any
+ permit ip 189.105.128.0 0.0.127.255 any
+ permit ip 189.106.0.0 0.1.255.255 any
+ permit ip 189.24.128.0 0.0.127.255 any
+ permit ip 189.48.0.0 0.0.255.255 any
+ permit ip 189.49.128.0 0.0.127.255 any
+ permit ip 189.70.0.0 0.1.255.255 any
+ permit ip 189.82.0.0 0.1.255.255 any
+ permit ip 191.0.128.0 0.0.127.255 any
+ permit ip 191.2.0.0 0.1.255.255 any
+ permit ip 191.212.0.0 0.1.255.255 any
+ permit ip 191.216.128.0 0.0.127.255 any
+ permit ip 191.218.0.0 0.0.127.255 any
+ permit ip 191.220.0.0 0.1.255.255 any
+ permit ip 191.40.128.0 0.0.127.255 any
+ permit ip 191.44.128.0 0.0.127.255 any
+ permit ip 191.45.128.0 0.0.127.255 any
+ permit ip 191.46.0.0 0.1.255.255 any
  permit ip 192.104.160.0 0.0.1.255 any
  permit ip 192.158.28.0 0.0.3.255 any
  permit ip 192.178.0.0 0.1.255.255 any

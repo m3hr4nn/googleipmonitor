@@ -197,11 +197,10 @@ def generate_html_report():
                 <a href="exports/export.json" download class="export-card"><span class="export-icon">{{ }}</span><span class="export-card-copy"><h3>JSON</h3><p>Structured data</p></span><span class="download-badge">.json ↗</span></a>
             </div>
             <div class="analytics-exports">
-                <div class="section-header compact-header"><div><span class="section-kicker">Bring the data with you</span><h2>Historical data exports</h2></div><span class="badge">3 formats</span></div>
+                <div class="section-header compact-header"><div><span class="section-kicker">Bring the data with you</span><h2>Historical data exports</h2></div><span class="badge">2 formats</span></div>
                 <div class="export-grid export-grid-compact">
                     <a href="exports/charts/historical_metrics.csv" download class="export-card compact"><span class="export-icon">▦</span><span class="export-card-copy"><h3>Historical CSV</h3><p>Excel-compatible trends</p></span><span class="download-badge">.csv ↗</span></a>
                     <a href="exports/charts/historical_metrics.json" download class="export-card compact"><span class="export-icon">{{ }}</span><span class="export-card-copy"><h3>Historical JSON</h3><p>API-friendly metrics</p></span><span class="download-badge">.json ↗</span></a>
-                    <a href="exports/charts/summary.md" download class="export-card compact"><span class="export-icon">✦</span><span class="export-card-copy"><h3>Summary report</h3><p>Readable markdown brief</p></span><span class="download-badge">.md ↗</span></a>
                 </div>
             </div>
         </section>

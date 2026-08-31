@@ -81,3 +81,7 @@ local/
 # Cache directory (chart data is committed for GitHub Pages)
 # Note: We commit cache/ to enable charts on GitHub Pages
 # cache/
+
+# Keep local Markdown notes out of the repository; README.md is the only tracked Markdown file.
+*.md
+!README.md

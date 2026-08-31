@@ -2,24 +2,24 @@
 
 ## Overview
 
-- **Data Points**: 2
-- **Date Range**: 2025-10-10 to 2025-10-11
-- **Generated**: 2026-08-31 08:57 UTC
+- **Data Points**: 90
+- **Date Range**: 2026-06-03 to 2026-08-31
+- **Generated**: 2026-08-31 16:06 UTC
 
 ## Current Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total IP Ranges | 949 |
-| IPv4 Ranges | 887 |
-| IPv6 Ranges | 62 |
-| Total Growth | +0 |
-| Avg Daily Change | 0.00 |
+| Total IP Ranges | 1,236 |
+| IPv4 Ranges | 1,126 |
+| IPv6 Ranges | 110 |
+| Total Growth | +155 |
+| Avg Daily Change | 1.82 |
 
 ## Distribution
 
-- **IPv4**: 93.5%
-- **IPv6**: 6.5%
+- **IPv4**: 91.1%
+- **IPv6**: 8.9%
 
 ---
 

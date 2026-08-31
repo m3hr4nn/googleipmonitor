@@ -3,69 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google IP Monitor - Dashboard</title>
+    <meta name="theme-color" content="#0b1020">
+    <title>Google IP Monitor · Network intelligence</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
-    <header class="header">
+    <div class="ambient-glow glow-a"></div>
+    <div class="ambient-glow glow-b"></div>
+
+    <header class="site-header">
         <div class="header-content">
-            <div class="header-left">
-                <div class="logo">
-                    <span class="logo-icon">🌐</span>
-                    <h1>Google IP Monitor</h1>
-                </div>
-            </div>
-            <div class="header-right">
-                <div class="last-update">Last update: 2026-08-31 08:57 UTC</div>
-            </div>
+            <a class="brand" href="#overview" aria-label="Google IP Monitor home">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" role="img"><circle cx="16" cy="16" r="12"></circle><path d="M4 16h24M16 4c3.2 3.3 4.7 7.3 4.7 12S19.2 24.7 16 28c-3.2-3.3-4.7-7.3-4.7-12S12.8 7.3 16 4Z"></path></svg>
+                </span>
+                <span class="brand-copy"><strong>Google IP Monitor</strong><small>Network intelligence</small></span>
+            </a>
+            <nav class="header-nav" aria-label="Dashboard sections">
+                <a href="#overview">Overview</a>
+                <a href="#analytics">Analytics</a>
+                <a href="#changes">Changes</a>
+                <a href="#exports">Exports</a>
+            </nav>
+            <div class="last-update"><span class="status-dot" aria-hidden="true"></span><span>Updated 2026-08-31 16:06 UTC</span></div>
         </div>
     </header>
 
-    <div class="container">
-        <div class="content">
-            <div class="stats">
-                <div class="stat-card previous">
-                    <h3>Previous Day</h3>
-                    <div class="number">1,236</div>
-                    <p>2026-08-30</p>
-                </div>
-                <div class="stat-card current">
-                    <h3>Current Day</h3>
-                    <div class="number">1,236</div>
-                    <p>2026-08-31</p>
-                </div>
-                <div class="stat-card change">
-                    <h3>Net Change</h3>
-                    <div class="number positive">+0</div>
-                    <p>IP Ranges</p>
-                </div>
-                <div class="stat-card">
-                    <h3>IPv4 Ranges</h3>
-                    <div class="number">1,126</div>
-                    <p>Active</p>
-                </div>
-                <div class="stat-card">
-                    <h3>IPv6 Ranges</h3>
-                    <div class="number">110</div>
-                    <p>Active</p>
+    <main class="page-shell">
+        <section class="hero" id="overview">
+            <div class="hero-copy">
+                <span class="eyebrow"><span class="eyebrow-pulse"></span> Live network telemetry</span>
+                <h1>Google IP ranges,<br><span>at a glance.</span></h1>
+                <p>Track Google Cloud and public IP infrastructure with a clear, continuously updated view of growth, changes, and ready-to-use firewall rules.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#analytics">Explore analytics <span>↓</span></a>
+                    <a class="button button-secondary" href="#exports">Download rules <span>↗</span></a>
                 </div>
             </div>
+            <div class="hero-panel glass-panel">
+                <div class="panel-topline"><span>MONITOR STATUS</span><span class="live-pill"><span class="status-dot"></span>Operational</span></div>
+                <div class="signal-visual" aria-hidden="true">
+                    <div class="signal-ring ring-one"></div>
+                    <div class="signal-ring ring-two"></div>
+                    <div class="signal-core"><span>LIVE</span><strong>24/7</strong></div>
+                </div>
+                <div class="hero-panel-footer">
+                    <div><strong>1,236</strong><span>active ranges</span></div>
+                    <div><strong>0</strong><span>changes in view</span></div>
+                </div>
+            </div>
+        </section>
 
-            
-        <div class="charts-section">
+        <section class="snapshot-section" aria-labelledby="snapshot-title">
+            <div class="section-intro">
+                <div><span class="section-kicker">Latest snapshot</span><h2 id="snapshot-title">A sharper view of the network</h2></div>
+                <p>Comparing <strong>2026-08-31</strong> with <strong>2026-08-30</strong></p>
+            </div>
+            <div class="stats">
+                <article class="stat-card previous"><div class="stat-card-top"><span class="stat-icon">◷</span><span>Baseline</span></div><h3>Previous snapshot</h3><div class="number">1,236</div><p>2026-08-30</p></article>
+                <article class="stat-card current"><div class="stat-card-top"><span class="stat-icon">◉</span><span class="live-label">Live</span></div><h3>Current ranges</h3><div class="number">1,236</div><p>2026-08-31</p></article>
+                <article class="stat-card change"><div class="stat-card-top"><span class="stat-icon">↗</span><span>Delta</span></div><h3>Net change</h3><div class="number positive">+0</div><p>IP ranges</p></article>
+                <article class="stat-card ipv4-card"><div class="stat-card-top"><span class="stat-icon">4</span><span>Protocol</span></div><h3>IPv4 ranges</h3><div class="number">1,126</div><p>Active prefixes</p></article>
+                <article class="stat-card ipv6-card"><div class="stat-card-top"><span class="stat-icon">6</span><span>Protocol</span></div><h3>IPv6 ranges</h3><div class="number">110</div><p>Active prefixes</p></article>
+            </div>
+        </section>
+
+
+        <section class="charts-section" id="analytics">
             <div class="section-header">
-                <h2>📈 Historical Analytics</h2>
-                <span class="badge">2025-10-10 to 2025-10-11 • 2 data points</span>
+                <div>
+                    <span class="section-kicker">Trend intelligence</span>
+                    <h2>Historical analytics</h2>
+                </div>
+                <span class="badge">2026-06-03 to 2026-08-31 • 90 data points</span>
             </div>
 
             <div class="chart-grid">
                 <div class="chart-card full-width">
-                    
+
         <div class="chart-container" style="position: relative; height: 400px; margin-bottom: 32px;">
             <canvas id="lineChart"></canvas>
         </div>
-        
+
         <script>
         (function() {
             const ctx = document.getElementById('lineChart');
@@ -78,54 +98,406 @@
     "type": "line",
     "data": {
         "labels": [
-            "2025-10-10",
-            "2025-10-11"
+            "2026-06-03",
+            "2026-06-04",
+            "2026-06-05",
+            "2026-06-06",
+            "2026-06-07",
+            "2026-06-08",
+            "2026-06-09",
+            "2026-06-10",
+            "2026-06-11",
+            "2026-06-12",
+            "2026-06-13",
+            "2026-06-14",
+            "2026-06-15",
+            "2026-06-16",
+            "2026-06-17",
+            "2026-06-18",
+            "2026-06-19",
+            "2026-06-20",
+            "2026-06-21",
+            "2026-06-22",
+            "2026-06-23",
+            "2026-06-24",
+            "2026-06-25",
+            "2026-06-26",
+            "2026-06-27",
+            "2026-06-28",
+            "2026-06-29",
+            "2026-06-30",
+            "2026-07-01",
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-04",
+            "2026-07-05",
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08",
+            "2026-07-09",
+            "2026-07-10",
+            "2026-07-11",
+            "2026-07-12",
+            "2026-07-13",
+            "2026-07-14",
+            "2026-07-15",
+            "2026-07-16",
+            "2026-07-17",
+            "2026-07-18",
+            "2026-07-19",
+            "2026-07-20",
+            "2026-07-21",
+            "2026-07-22",
+            "2026-07-23",
+            "2026-07-24",
+            "2026-07-25",
+            "2026-07-26",
+            "2026-07-27",
+            "2026-07-28",
+            "2026-07-29",
+            "2026-07-30",
+            "2026-07-31",
+            "2026-08-01",
+            "2026-08-02",
+            "2026-08-03",
+            "2026-08-04",
+            "2026-08-05",
+            "2026-08-06",
+            "2026-08-07",
+            "2026-08-08",
+            "2026-08-09",
+            "2026-08-10",
+            "2026-08-11",
+            "2026-08-12",
+            "2026-08-13",
+            "2026-08-14",
+            "2026-08-15",
+            "2026-08-16",
+            "2026-08-17",
+            "2026-08-18",
+            "2026-08-19",
+            "2026-08-20",
+            "2026-08-21",
+            "2026-08-22",
+            "2026-08-23",
+            "2026-08-24",
+            "2026-08-25",
+            "2026-08-26",
+            "2026-08-27",
+            "2026-08-28",
+            "2026-08-29",
+            "2026-08-30",
+            "2026-08-31"
         ],
         "datasets": [
             {
                 "label": "Total IP Ranges",
                 "data": [
-                    949,
-                    949
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1083,
+                    1083,
+                    1083,
+                    1084,
+                    1084,
+                    1084,
+                    1084,
+                    1101,
+                    1101,
+                    1101,
+                    1101,
+                    1101,
+                    1101,
+                    1101,
+                    1101,
+                    1101,
+                    1144,
+                    1144,
+                    1144,
+                    1144,
+                    1144,
+                    1144,
+                    1144,
+                    1144,
+                    1144,
+                    1144,
+                    1144,
+                    1144,
+                    1144,
+                    1150,
+                    1151,
+                    1151,
+                    1151,
+                    1151,
+                    1151,
+                    1152,
+                    1152,
+                    1152,
+                    1152,
+                    1152,
+                    1152,
+                    1154,
+                    1154,
+                    1154,
+                    1152,
+                    1154,
+                    1154,
+                    1152,
+                    1152,
+                    1152,
+                    1154,
+                    1198,
+                    1198,
+                    1198,
+                    1201,
+                    1201,
+                    1201,
+                    1201,
+                    1201,
+                    1201,
+                    1201,
+                    1201,
+                    1201,
+                    1199,
+                    1199,
+                    1199,
+                    1199,
+                    1199,
+                    1199,
+                    1199,
+                    1199,
+                    1199,
+                    1199,
+                    1199,
+                    1230,
+                    1236,
+                    1236,
+                    1236,
+                    1236
                 ],
-                "borderColor": "#8ab4f8",
-                "backgroundColor": "#8ab4f820",
+                "borderColor": "#8da7ff",
+                "backgroundColor": "#8da7ff20",
                 "borderWidth": 2,
                 "tension": 0.4,
                 "fill": true,
                 "pointRadius": 3,
                 "pointHoverRadius": 6,
-                "pointBackgroundColor": "#8ab4f8"
+                "pointBackgroundColor": "#8da7ff"
             },
             {
                 "label": "IPv4 Ranges",
                 "data": [
-                    887,
-                    887
+                    1018,
+                    1018,
+                    1018,
+                    1018,
+                    1018,
+                    1018,
+                    1018,
+                    1018,
+                    1018,
+                    1018,
+                    1018,
+                    1020,
+                    1020,
+                    1020,
+                    1021,
+                    1021,
+                    1021,
+                    1021,
+                    1038,
+                    1038,
+                    1038,
+                    1038,
+                    1038,
+                    1038,
+                    1038,
+                    1038,
+                    1038,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1081,
+                    1087,
+                    1088,
+                    1088,
+                    1088,
+                    1088,
+                    1088,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1091,
+                    1091,
+                    1091,
+                    1089,
+                    1091,
+                    1091,
+                    1089,
+                    1089,
+                    1089,
+                    1091,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1089,
+                    1120,
+                    1126,
+                    1126,
+                    1126,
+                    1126
                 ],
-                "borderColor": "#81c995",
-                "backgroundColor": "#81c99520",
+                "borderColor": "#7fe0b0",
+                "backgroundColor": "#7fe0b020",
                 "borderWidth": 2,
                 "tension": 0.4,
                 "fill": true,
                 "pointRadius": 2,
                 "pointHoverRadius": 5,
-                "pointBackgroundColor": "#81c995"
+                "pointBackgroundColor": "#7fe0b0"
             },
             {
                 "label": "IPv6 Ranges",
                 "data": [
-                    62,
-                    62
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    63,
+                    109,
+                    109,
+                    109,
+                    112,
+                    112,
+                    112,
+                    112,
+                    112,
+                    112,
+                    112,
+                    112,
+                    112,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110,
+                    110
                 ],
-                "borderColor": "#c58af9",
-                "backgroundColor": "#c58af920",
+                "borderColor": "#c7a6ff",
+                "backgroundColor": "#c7a6ff20",
                 "borderWidth": 2,
                 "tension": 0.4,
                 "fill": true,
                 "pointRadius": 2,
                 "pointHoverRadius": 5,
-                "pointBackgroundColor": "#c58af9"
+                "pointBackgroundColor": "#c7a6ff"
             }
         ]
     },
@@ -135,9 +507,9 @@
         "plugins": {
             "legend": {
                 "labels": {
-                    "color": "#e8eaed",
+                    "color": "#f3f5ff",
                     "font": {
-                        "family": "'Segoe UI', Roboto, sans-serif",
+                        "family": "'Manrope', sans-serif",
                         "size": 12
                     },
                     "padding": 15,
@@ -145,10 +517,10 @@
                 }
             },
             "tooltip": {
-                "backgroundColor": "#323232",
-                "titleColor": "#e8eaed",
-                "bodyColor": "#9aa0a6",
-                "borderColor": "#3c4043",
+                "backgroundColor": "#1b2441",
+                "titleColor": "#f3f5ff",
+                "bodyColor": "#9ca6c4",
+                "borderColor": "#46527a",
                 "borderWidth": 1,
                 "padding": 12,
                 "displayColors": true,
@@ -157,7 +529,7 @@
             "title": {
                 "display": true,
                 "text": "IP Range Growth Over Time",
-                "color": "#e8eaed",
+                "color": "#f3f5ff",
                 "font": {
                     "size": 16,
                     "weight": "500"
@@ -172,22 +544,22 @@
         "scales": {
             "x": {
                 "grid": {
-                    "color": "#3c404340",
+                    "color": "#46527a55",
                     "drawBorder": false
                 },
                 "ticks": {
-                    "color": "#9aa0a6",
+                    "color": "#9ca6c4",
                     "maxRotation": 45,
                     "minRotation": 45
                 }
             },
             "y": {
                 "grid": {
-                    "color": "#3c404340",
+                    "color": "#46527a55",
                     "drawBorder": false
                 },
                 "ticks": {
-                    "color": "#9aa0a6"
+                    "color": "#9ca6c4"
                 },
                 "beginAtZero": false
             }
@@ -199,15 +571,15 @@
             new Chart(ctx, config);
         })();
         </script>
-        
+
                 </div>
 
                 <div class="chart-card">
-                    
+
         <div class="chart-container" style="position: relative; height: 350px; margin-bottom: 32px;">
             <canvas id="barChart"></canvas>
         </div>
-        
+
         <script>
         (function() {
             const ctx = document.getElementById('barChart');
@@ -220,18 +592,74 @@
     "type": "bar",
     "data": {
         "labels": [
-            "2025-10-10",
-            "2025-10-11"
+            "2026-08-02",
+            "2026-08-03",
+            "2026-08-04",
+            "2026-08-05",
+            "2026-08-06",
+            "2026-08-07",
+            "2026-08-08",
+            "2026-08-09",
+            "2026-08-10",
+            "2026-08-11",
+            "2026-08-12",
+            "2026-08-13",
+            "2026-08-14",
+            "2026-08-15",
+            "2026-08-16",
+            "2026-08-17",
+            "2026-08-18",
+            "2026-08-19",
+            "2026-08-20",
+            "2026-08-21",
+            "2026-08-22",
+            "2026-08-23",
+            "2026-08-24",
+            "2026-08-25",
+            "2026-08-26",
+            "2026-08-27",
+            "2026-08-28",
+            "2026-08-29",
+            "2026-08-30",
+            "2026-08-31"
         ],
         "datasets": [
             {
                 "label": "Added",
                 "data": [
                     0,
+                    2,
+                    46,
+                    0,
+                    0,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    31,
+                    6,
+                    0,
+                    0,
                     0
                 ],
-                "backgroundColor": "#81c995cc",
-                "borderColor": "#81c995",
+                "backgroundColor": "#7fe0b0cc",
+                "borderColor": "#7fe0b0",
                 "borderWidth": 1,
                 "borderRadius": 4
             },
@@ -239,10 +667,38 @@
                 "label": "Removed",
                 "data": [
                     0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
                     0
                 ],
-                "backgroundColor": "#f28b82cc",
-                "borderColor": "#f28b82",
+                "backgroundColor": "#ff8d9bcc",
+                "borderColor": "#ff8d9b",
                 "borderWidth": 1,
                 "borderRadius": 4
             }
@@ -254,9 +710,9 @@
         "plugins": {
             "legend": {
                 "labels": {
-                    "color": "#e8eaed",
+                    "color": "#f3f5ff",
                     "font": {
-                        "family": "'Segoe UI', Roboto, sans-serif",
+                        "family": "'Manrope', sans-serif",
                         "size": 12
                     },
                     "padding": 15,
@@ -264,10 +720,10 @@
                 }
             },
             "tooltip": {
-                "backgroundColor": "#323232",
-                "titleColor": "#e8eaed",
-                "bodyColor": "#9aa0a6",
-                "borderColor": "#3c4043",
+                "backgroundColor": "#1b2441",
+                "titleColor": "#f3f5ff",
+                "bodyColor": "#9ca6c4",
+                "borderColor": "#46527a",
                 "borderWidth": 1,
                 "padding": 12,
                 "displayColors": true,
@@ -276,7 +732,7 @@
             "title": {
                 "display": true,
                 "text": "Daily IP Range Changes (Last 30 Days)",
-                "color": "#e8eaed",
+                "color": "#f3f5ff",
                 "font": {
                     "size": 16,
                     "weight": "500"
@@ -294,18 +750,18 @@
                     "display": false
                 },
                 "ticks": {
-                    "color": "#9aa0a6",
+                    "color": "#9ca6c4",
                     "maxRotation": 45,
                     "minRotation": 45
                 }
             },
             "y": {
                 "grid": {
-                    "color": "#3c404340",
+                    "color": "#46527a55",
                     "drawBorder": false
                 },
                 "ticks": {
-                    "color": "#9aa0a6"
+                    "color": "#9ca6c4"
                 },
                 "beginAtZero": true
             }
@@ -317,15 +773,15 @@
             new Chart(ctx, config);
         })();
         </script>
-        
+
                 </div>
 
                 <div class="chart-card">
-                    
+
         <div class="chart-container" style="position: relative; height: 320px; margin-bottom: 32px;">
             <canvas id="pieChart"></canvas>
         </div>
-        
+
         <script>
         (function() {
             const ctx = document.getElementById('pieChart');
@@ -338,22 +794,22 @@
     "type": "doughnut",
     "data": {
         "labels": [
-            "IPv4 (93.5%)",
-            "IPv6 (6.5%)"
+            "IPv4 (91.1%)",
+            "IPv6 (8.9%)"
         ],
         "datasets": [
             {
                 "data": [
-                    887,
-                    62
+                    1126,
+                    110
                 ],
                 "backgroundColor": [
-                    "#81c995dd",
-                    "#c58af9dd"
+                    "#7fe0b0dd",
+                    "#c7a6ffdd"
                 ],
                 "borderColor": [
-                    "#81c995",
-                    "#c58af9"
+                    "#7fe0b0",
+                    "#c7a6ff"
                 ],
                 "borderWidth": 2,
                 "hoverOffset": 10
@@ -366,9 +822,9 @@
         "plugins": {
             "legend": {
                 "labels": {
-                    "color": "#e8eaed",
+                    "color": "#f3f5ff",
                     "font": {
-                        "family": "'Segoe UI', Roboto, sans-serif",
+                        "family": "'Manrope', sans-serif",
                         "size": 12
                     },
                     "padding": 15,
@@ -376,10 +832,10 @@
                 }
             },
             "tooltip": {
-                "backgroundColor": "#323232",
-                "titleColor": "#e8eaed",
-                "bodyColor": "#9aa0a6",
-                "borderColor": "#3c4043",
+                "backgroundColor": "#1b2441",
+                "titleColor": "#f3f5ff",
+                "bodyColor": "#9ca6c4",
+                "borderColor": "#46527a",
                 "borderWidth": 1,
                 "padding": 12,
                 "displayColors": true,
@@ -390,7 +846,7 @@
             "title": {
                 "display": true,
                 "text": "IPv4 vs IPv6 Distribution",
-                "color": "#e8eaed",
+                "color": "#f3f5ff",
                 "font": {
                     "size": 16,
                     "weight": "500"
@@ -410,180 +866,68 @@
             new Chart(ctx, config);
         })();
         </script>
-        
+
                 </div>
             </div>
 
             <div class="chart-summary">
                 <div class="summary-stat">
                     <span class="label">Total Growth</span>
-                    <span class="value positive">+0</span>
+                    <span class="value positive">+155</span>
                 </div>
                 <div class="summary-stat">
                     <span class="label">Avg Daily Change</span>
-                    <span class="value">0.00</span>
+                    <span class="value">1.82</span>
                 </div>
                 <div class="summary-stat">
                     <span class="label">Current IPv4</span>
-                    <span class="value">887</span>
+                    <span class="value">1,126</span>
                 </div>
                 <div class="summary-stat">
                     <span class="label">Current IPv6</span>
-                    <span class="value">62</span>
+                    <span class="value">110</span>
                 </div>
             </div>
-        </div>
-        
+        </section>
 
-            <div class="changes-section">
-                <div class="section-header">
-                    <h2>📊 Changes Detected</h2>
-                    <span class="badge">0 total changes</span>
-                </div>
+
+        <section class="changes-section" id="changes">
+            <div class="section-header"><div><span class="section-kicker">Diff monitor</span><h2>What changed?</h2></div><span class="badge">0 total changes</span></div>
+
                 <div class="no-changes">
-                    <div class="icon">✅</div>
-                    <h3>No Changes Detected</h3>
-                    <p>All IP ranges remain unchanged</p>
+                    <div class="no-changes-icon">✓</div>
+                    <div>
+                        <h3>No changes detected</h3>
+                        <p>Google’s published ranges match the previous snapshot.</p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="exports-section" id="exports">
+            <div class="section-header"><div><span class="section-kicker">Ready for production</span><h2>Firewall rule exports</h2></div><span class="badge">9 formats</span></div>
+            <p class="section-description">Take the latest Google ranges into your existing security workflow.</p>
+            <div class="export-grid">
+                <a href="exports/iptables.sh" download class="export-card"><span class="export-icon">⌘</span><span class="export-card-copy"><h3>iptables</h3><p>Linux firewall rules</p></span><span class="download-badge">.sh ↗</span></a>
+                <a href="exports/aws-security-group.json" download class="export-card"><span class="export-icon">☁</span><span class="export-card-copy"><h3>AWS Security Group</h3><p>Amazon Web Services</p></span><span class="download-badge">.json ↗</span></a>
+                <a href="exports/azure-nsg.json" download class="export-card"><span class="export-icon">◆</span><span class="export-card-copy"><h3>Azure NSG</h3><p>Microsoft Azure</p></span><span class="download-badge">.json ↗</span></a>
+                <a href="exports/cisco-acl.txt" download class="export-card"><span class="export-icon">◈</span><span class="export-card-copy"><h3>Cisco ACL</h3><p>Cisco IOS access lists</p></span><span class="download-badge">.txt ↗</span></a>
+                <a href="exports/pfsense-alias.txt" download class="export-card"><span class="export-icon">◇</span><span class="export-card-copy"><h3>pfSense</h3><p>Firewall alias</p></span><span class="download-badge">.txt ↗</span></a>
+                <a href="exports/mikrotik.rsc" download class="export-card"><span class="export-icon">⌁</span><span class="export-card-copy"><h3>MikroTik</h3><p>RouterOS script</p></span><span class="download-badge">.rsc ↗</span></a>
+                <a href="exports/plain-text.txt" download class="export-card"><span class="export-icon">≡</span><span class="export-card-copy"><h3>Plain text</h3><p>Simple prefix list</p></span><span class="download-badge">.txt ↗</span></a>
+                <a href="exports/export.csv" download class="export-card"><span class="export-icon">▦</span><span class="export-card-copy"><h3>CSV</h3><p>Spreadsheet compatible</p></span><span class="download-badge">.csv ↗</span></a>
+                <a href="exports/export.json" download class="export-card"><span class="export-icon">{ }</span><span class="export-card-copy"><h3>JSON</h3><p>Structured data</p></span><span class="download-badge">.json ↗</span></a>
+            </div>
+            <div class="analytics-exports">
+                <div class="section-header compact-header"><div><span class="section-kicker">Bring the data with you</span><h2>Historical data exports</h2></div><span class="badge">3 formats</span></div>
+                <div class="export-grid export-grid-compact">
+                    <a href="exports/charts/historical_metrics.csv" download class="export-card compact"><span class="export-icon">▦</span><span class="export-card-copy"><h3>Historical CSV</h3><p>Excel-compatible trends</p></span><span class="download-badge">.csv ↗</span></a>
+                    <a href="exports/charts/historical_metrics.json" download class="export-card compact"><span class="export-icon">{ }</span><span class="export-card-copy"><h3>Historical JSON</h3><p>API-friendly metrics</p></span><span class="download-badge">.json ↗</span></a>
+                    <a href="exports/charts/summary.md" download class="export-card compact"><span class="export-icon">✦</span><span class="export-card-copy"><h3>Summary report</h3><p>Readable markdown brief</p></span><span class="download-badge">.md ↗</span></a>
                 </div>
             </div>
+        </section>
 
-            <div class="changes-section">
-                <div class="section-header">
-                    <h2>🔥 Firewall Rules Export</h2>
-                    <span class="badge">9 formats available</span>
-                </div>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 32px;">
-                    <a href="exports/iptables.sh" download class="export-card">
-                        <div class="export-icon">🐧</div>
-                        <h3>iptables</h3>
-                        <p>Linux firewall rules</p>
-                        <span class="download-badge">Download .sh</span>
-                    </a>
-
-                    <a href="exports/aws-security-group.json" download class="export-card">
-                        <div class="export-icon">☁️</div>
-                        <h3>AWS Security Group</h3>
-                        <p>Amazon Web Services</p>
-                        <span class="download-badge">Download .json</span>
-                    </a>
-
-                    <a href="exports/azure-nsg.json" download class="export-card">
-                        <div class="export-icon">🔷</div>
-                        <h3>Azure NSG</h3>
-                        <p>Microsoft Azure</p>
-                        <span class="download-badge">Download .json</span>
-                    </a>
-
-                    <a href="exports/cisco-acl.txt" download class="export-card">
-                        <div class="export-icon">🌐</div>
-                        <h3>Cisco ACL</h3>
-                        <p>Cisco IOS access lists</p>
-                        <span class="download-badge">Download .txt</span>
-                    </a>
-
-                    <a href="exports/pfsense-alias.txt" download class="export-card">
-                        <div class="export-icon">🛡️</div>
-                        <h3>pfSense</h3>
-                        <p>pfSense firewall alias</p>
-                        <span class="download-badge">Download .txt</span>
-                    </a>
-
-                    <a href="exports/mikrotik.rsc" download class="export-card">
-                        <div class="export-icon">🔧</div>
-                        <h3>MikroTik</h3>
-                        <p>RouterOS script</p>
-                        <span class="download-badge">Download .rsc</span>
-                    </a>
-
-                    <a href="exports/plain-text.txt" download class="export-card">
-                        <div class="export-icon">📄</div>
-                        <h3>Plain Text</h3>
-                        <p>Simple text list</p>
-                        <span class="download-badge">Download .txt</span>
-                    </a>
-
-                    <a href="exports/export.csv" download class="export-card">
-                        <div class="export-icon">📊</div>
-                        <h3>CSV</h3>
-                        <p>Comma-separated values</p>
-                        <span class="download-badge">Download .csv</span>
-                    </a>
-
-                    <a href="exports/export.json" download class="export-card">
-                        <div class="export-icon">📦</div>
-                        <h3>JSON</h3>
-                        <p>Structured JSON data</p>
-                        <span class="download-badge">Download .json</span>
-                    </a>
-                </div>
-
-                <div style="text-align: center;">
-                    <a href="exports/index.html" style="color: var(--accent-blue); text-decoration: none; font-size: 14px;">
-                        View all export formats →
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>Generated on 2026-08-31 08:57:41 UTC</p>
-            <p>Monitoring Google Cloud and Public IP Ranges • <a href="https://github.com/m3hr4nn/googleipmonitor" target="_blank">GitHub</a></p>
-        </div>
-    </div>
-
-    <style>
-        .export-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 24px;
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            transition: all 0.2s ease;
-            cursor: pointer;
-        }
-
-        .export-card:hover {
-            background-color: var(--bg-tertiary);
-            border-color: var(--accent-blue);
-            transform: translateY(-4px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-        }
-
-        .export-icon {
-            font-size: 48px;
-            margin-bottom: 12px;
-        }
-
-        .export-card h3 {
-            color: var(--text-primary);
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-
-        .export-card p {
-            color: var(--text-secondary);
-            font-size: 13px;
-            margin-bottom: 16px;
-        }
-
-        .download-badge {
-            background-color: var(--accent-blue);
-            color: var(--bg-primary);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 500;
-        }
-
-        .export-card:hover .download-badge {
-            background-color: var(--accent-green);
-        }
-    </style>
+        <footer class="footer"><p>Generated on 2026-08-31 16:06:03 UTC</p><p>Monitoring Google Cloud and Public IP Ranges · <a href="https://github.com/m3hr4nn/googleipmonitor" target="_blank" rel="noopener">View source on GitHub ↗</a></p></footer>
+    </main>
 </body>
 </html>

@@ -102,9 +102,12 @@ class ChartRendererService:
 
         # Build charts HTML
         charts_html = f'''
-        <div class="charts-section">
+        <section class="charts-section" id="analytics">
             <div class="section-header">
-                <h2>📈 Historical Analytics</h2>
+                <div>
+                    <span class="section-kicker">Trend intelligence</span>
+                    <h2>Historical analytics</h2>
+                </div>
                 <span class="badge">{date_range.get('start', 'N/A')} to {date_range.get('end', 'N/A')} • {total_points} data points</span>
             </div>
 
@@ -140,7 +143,7 @@ class ChartRendererService:
                     <span class="value">{summary.get('current_ipv6', 0):,}</span>
                 </div>
             </div>
-        </div>
+        </section>
         '''
 
         return charts_html

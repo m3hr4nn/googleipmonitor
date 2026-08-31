@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "days_to_show": 90,
-  "use_cache": true,
+  "use_cache": false,
   "refresh_interval": "3h",
   "charts": {
     "line_chart": {

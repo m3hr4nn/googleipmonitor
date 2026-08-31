@@ -27,20 +27,20 @@ class ChartConfigService:
         self.config_dir = config_dir
         self.config_cache_file = os.path.join(cache_dir, 'chart_configs.json')
 
-        # Chrome-inspired dark theme colors (matching existing styles.css)
+        # Glassmorphism dark theme colors (matching styles.css)
         self.theme = {
-            'bg_primary': '#1f1f1f',
-            'bg_secondary': '#292929',
-            'bg_tertiary': '#323232',
-            'accent_blue': '#8ab4f8',
-            'accent_green': '#81c995',
-            'accent_red': '#f28b82',
-            'accent_yellow': '#fdd663',
-            'accent_purple': '#c58af9',
-            'text_primary': '#e8eaed',
-            'text_secondary': '#9aa0a6',
-            'border_color': '#3c4043',
-            'grid_color': '#3c404340'
+            'bg_primary': '#080b17',
+            'bg_secondary': '#101527',
+            'bg_tertiary': '#1b2441',
+            'accent_blue': '#8da7ff',
+            'accent_green': '#7fe0b0',
+            'accent_red': '#ff8d9b',
+            'accent_yellow': '#ffd580',
+            'accent_purple': '#c7a6ff',
+            'text_primary': '#f3f5ff',
+            'text_secondary': '#9ca6c4',
+            'border_color': '#46527a',
+            'grid_color': '#46527a55'
         }
 
     def get_theme_colors(self) -> Dict:
@@ -57,7 +57,7 @@ class ChartConfigService:
                     'labels': {
                         'color': self.theme['text_primary'],
                         'font': {
-                            'family': "'Segoe UI', Roboto, sans-serif",
+                            'family': "'Manrope', sans-serif",
                             'size': 12
                         },
                         'padding': 15,
@@ -334,7 +334,7 @@ class ChartConfigService:
                 'generated_at': datetime.now().isoformat(),
                 'service': 'ChartConfigService',
                 'version': '1.1.0',
-                'theme': 'chrome-dark'
+                'theme': 'glass-dark'
             }
         }
 

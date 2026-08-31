@@ -45,7 +45,7 @@ class ChartExportService:
 
         try:
             with open(csv_file, 'w', newline='') as f:
-                writer = csv.writer(f)
+                writer = csv.writer(f, lineterminator='\n')
 
                 # Write header
                 writer.writerow([

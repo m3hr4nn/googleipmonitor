@@ -1,9 +1,9 @@
 import os
 import json
 import requests
+from glob import glob
 from datetime import datetime
-from typing import Dict, List, Set
-import hashlib
+from typing import Dict, Optional, Set, Tuple
 
 class GoogleIPMonitor:
     def __init__(self):
@@ -45,10 +45,34 @@ class GoogleIPMonitor:
             return None
         with open(filename, 'r') as f:
             return json.load(f)
+
+    def load_latest_snapshot(self, current_date: str) -> Tuple[Optional[str], Optional[Dict]]:
+        """Load the most recent snapshot available before this run.
+
+        The workflow runs multiple times per day, while snapshots use a
+        date-only filename. On a same-day rerun, the existing file therefore
+        represents the previous run and must be loaded before it is replaced.
+        """
+        current_filename = f'{current_date}.json'
+        snapshot_files = sorted(
+            filename for filename in glob(os.path.join(self.data_dir, '*.json'))
+            if os.path.basename(filename) <= current_filename
+        )
+
+        if not snapshot_files:
+            return None, None
+
+        latest_file = snapshot_files[-1]
+        snapshot_date = os.path.splitext(os.path.basename(latest_file))[0]
+        with open(latest_file, 'r') as f:
+            return snapshot_date, json.load(f)
     
     def extract_prefixes(self, data: Dict) -> Set[str]:
         """Extract all IP prefixes from data"""
         prefixes = set()
+
+        if not data:
+            return prefixes
         
         if data.get('cloud'):
             for prefix_entry in data['cloud'].get('prefixes', []):
@@ -68,16 +92,29 @@ class GoogleIPMonitor:
     
     def compare_data(self, old_data: Dict, new_data: Dict) -> Dict:
         """Compare two datasets and find differences"""
-        if not old_data or not new_data:
+        if not new_data:
             return {
                 'added': [],
                 'removed': [],
                 'total_current': 0,
+                'total_previous': 0,
+                'has_baseline': False,
                 'has_changes': False
             }
-        
-        old_prefixes = self.extract_prefixes(old_data)
+
         new_prefixes = self.extract_prefixes(new_data)
+
+        if not old_data:
+            return {
+                'added': [],
+                'removed': [],
+                'total_current': len(new_prefixes),
+                'total_previous': 0,
+                'has_baseline': False,
+                'has_changes': False
+            }
+
+        old_prefixes = self.extract_prefixes(old_data)
         
         added = new_prefixes - old_prefixes
         removed = old_prefixes - new_prefixes
@@ -87,7 +124,12 @@ class GoogleIPMonitor:
             'removed': sorted(list(removed)),
             'total_current': len(new_prefixes),
             'total_previous': len(old_prefixes),
-            'has_changes': len(added) > 0 or len(removed) > 0
+            'has_baseline': True,
+            'has_changes': (
+                len(added) > 0
+                or len(removed) > 0
+                or len(new_prefixes) != len(old_prefixes)
+            )
         }
     
     def format_report(self, comparison: Dict, today: str, yesterday: str) -> str:
@@ -97,7 +139,10 @@ class GoogleIPMonitor:
         report += f"{'='*40}\n\n"
         
         if not comparison['has_changes']:
-            report += "✅ No changes detected\n"
+            if comparison.get('has_baseline', False):
+                report += "✅ No changes detected\n"
+            else:
+                report += "ℹ️ No previous snapshot available; baseline saved\n"
             report += f"📦 Total IP ranges: {comparison['total_current']}\n"
         else:
             report += "🔔 Changes detected!\n\n"
@@ -150,26 +195,30 @@ class GoogleIPMonitor:
     def run(self):
         """Main execution flow"""
         today = datetime.now().strftime('%Y-%m-%d')
-        yesterday = datetime.now().strftime('%Y-%m-%d')  # You'd calculate actual yesterday
-        
+
         print(f"Fetching Google IP data for {today}...")
         current_data = self.fetch_ip_data()
         
         if not current_data['cloud'] and not current_data['goog']:
             print("Failed to fetch data")
             return
-        
-        # Save today's data
-        self.save_data(current_data, today)
-        
-        # Load yesterday's data
-        previous_data = self.load_data(yesterday)
-        
+
+        # Load the previous run before replacing today's date-only snapshot.
+        previous_date, previous_data = self.load_latest_snapshot(today)
+        if previous_date:
+            print(f"Comparing with previous snapshot: {previous_date}")
+        else:
+            print("No previous snapshot found; creating a baseline")
+
         # Compare
         comparison = self.compare_data(previous_data, current_data)
-        
+
+        # Save today's data only after comparison so same-day runs retain a
+        # usable previous snapshot for the next workflow execution.
+        self.save_data(current_data, today)
+
         # Generate report
-        report = self.format_report(comparison, today, yesterday)
+        report = self.format_report(comparison, today, previous_date or 'none')
         print("\n" + report)
         
         # Send to Telegram

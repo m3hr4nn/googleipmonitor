@@ -187,7 +187,7 @@
             1240,
             1240,
             1240,
-            1241
+            1240
           ],
           "borderColor": "#8da7ff",
           "backgroundColor": "#8da7ff20",
@@ -290,7 +290,7 @@
             1130,
             1130,
             1130,
-            1131
+            1130
           ],
           "borderColor": "#7fe0b0",
           "backgroundColor": "#7fe0b020",
@@ -539,7 +539,7 @@
             4,
             0,
             0,
-            1
+            0
           ],
           "backgroundColor": "#7fe0b0cc",
           "borderColor": "#7fe0b0",
@@ -661,7 +661,7 @@
       "datasets": [
         {
           "data": [
-            1131,
+            1130,
             110
           ],
           "backgroundColor": [
@@ -723,7 +723,7 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-09-09T18:03:34.384668",
+    "generated_at": "2026-09-09T22:48:13.146359",
     "service": "ChartConfigService",
     "version": "1.1.0",
     "theme": "glass-dark"

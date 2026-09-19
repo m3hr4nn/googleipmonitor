@@ -1,5 +1,5 @@
 # Google IP Ranges - MikroTik RouterOS
-# Generated: 2026-09-19 19:39:04 UTC
+# Generated: 2026-09-19 22:32:11 UTC
 
 # Create address list
 /ip firewall address-list
@@ -1174,7 +1174,7 @@ add list=google-ips-v6 address=2600:1900:42e0::/44 comment="Google IPv6"
 add list=google-ips-v6 address=2600:1900:4334::/46 comment="Google IPv6"
 add list=google-ips-v6 address=2600:1900:5400::/44 comment="Google IPv6"
 add list=google-ips-v6 address=2600:1900:8000::/44 comment="Google IPv6"
-add list=google-ips-v6 address=2600:1900::/28 comment="Google IPv6"
+add list=google-ips-v6 address=2600:1900::/29 comment="Google IPv6"
 add list=google-ips-v6 address=2600:1901:4010::/44 comment="Google IPv6"
 add list=google-ips-v6 address=2600:1901:8100::/44 comment="Google IPv6"
 add list=google-ips-v6 address=2600:1901:8110::/44 comment="Google IPv6"

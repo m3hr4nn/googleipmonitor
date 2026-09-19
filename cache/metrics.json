@@ -457,7 +457,7 @@
     0,
     0,
     0,
-    0
+    1
   ],
   "daily_removed": [
     0,
@@ -549,7 +549,7 @@
     0,
     0,
     0,
-    0
+    1
   ],
   "summary": {
     "total_data_points": 90,
@@ -561,10 +561,10 @@
     "current_ipv4": 1131,
     "current_ipv6": 110,
     "total_growth": 140,
-    "avg_daily_change": 1.6444444444444444
+    "avg_daily_change": 1.6555555555555554
   },
   "metadata": {
-    "generated_at": "2026-09-19T19:39:04.288296",
+    "generated_at": "2026-09-19T22:32:10.959308",
     "service": "DataAggregatorService",
     "version": "1.1.0"
   }

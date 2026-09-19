@@ -458,7 +458,7 @@
       0,
       0,
       0,
-      0
+      1
     ],
     "daily_removed": [
       0,
@@ -550,7 +550,7 @@
       0,
       0,
       0,
-      0
+      1
     ]
   },
   "summary": {
@@ -563,10 +563,10 @@
     "current_ipv4": 1131,
     "current_ipv6": 110,
     "total_growth": 140,
-    "avg_daily_change": 1.6444444444444444
+    "avg_daily_change": 1.6555555555555554
   },
   "metadata": {
-    "exported_at": "2026-09-19T19:39:04.296365",
+    "exported_at": "2026-09-19T22:32:10.969151",
     "service": "ChartExportService",
     "version": "1.1.0",
     "format": "json"

@@ -10527,7 +10527,7 @@
       "IpProtocol": "-1",
       "Ipv6Ranges": [
         {
-          "CidrIpv6": "2600:1900::/28",
+          "CidrIpv6": "2600:1900::/29",
           "Description": "Google IPv6 Range"
         }
       ]

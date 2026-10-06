@@ -182,7 +182,7 @@
       1245,
       1245,
       1245,
-      1265
+      1245
     ],
     "ipv4_counts": [
       1081,
@@ -274,7 +274,7 @@
       1135,
       1135,
       1135,
-      1155
+      1135
     ],
     "ipv6_counts": [
       63,
@@ -458,7 +458,7 @@
       0,
       0,
       0,
-      20
+      0
     ],
     "daily_removed": [
       0,
@@ -559,14 +559,14 @@
       "start": "2026-07-09",
       "end": "2026-10-06"
     },
-    "current_total": 1265,
-    "current_ipv4": 1155,
+    "current_total": 1245,
+    "current_ipv4": 1135,
     "current_ipv6": 110,
-    "total_growth": 121,
-    "avg_daily_change": 1.488888888888889
+    "total_growth": 101,
+    "avg_daily_change": 1.2666666666666666
   },
   "metadata": {
-    "exported_at": "2026-10-06T01:39:01.884755",
+    "exported_at": "2026-10-06T09:29:21.552080",
     "service": "ChartExportService",
     "version": "1.1.0",
     "format": "json"

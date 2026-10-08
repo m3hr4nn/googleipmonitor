@@ -187,7 +187,7 @@
             1245,
             1265,
             1245,
-            1265
+            1245
           ],
           "borderColor": "#8da7ff",
           "backgroundColor": "#8da7ff20",
@@ -290,7 +290,7 @@
             1135,
             1155,
             1135,
-            1155
+            1135
           ],
           "borderColor": "#7fe0b0",
           "backgroundColor": "#7fe0b020",
@@ -539,7 +539,7 @@
             0,
             20,
             0,
-            20
+            0
           ],
           "backgroundColor": "#7fe0b0cc",
           "borderColor": "#7fe0b0",
@@ -655,13 +655,13 @@
     "type": "doughnut",
     "data": {
       "labels": [
-        "IPv4 (91.3%)",
-        "IPv6 (8.7%)"
+        "IPv4 (91.2%)",
+        "IPv6 (8.8%)"
       ],
       "datasets": [
         {
           "data": [
-            1155,
+            1135,
             110
           ],
           "backgroundColor": [
@@ -723,7 +723,7 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-10-08T00:29:35.212861",
+    "generated_at": "2026-10-08T09:34:51.859956",
     "service": "ChartConfigService",
     "version": "1.1.0",
     "theme": "glass-dark"

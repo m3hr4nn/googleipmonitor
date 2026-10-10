@@ -1473,15 +1473,6 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
-          "CidrIp": "179.193.128.0/19",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
           "CidrIp": "179.199.0.0/17",
           "Description": "Google IP Range"
         }
@@ -1509,43 +1500,7 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
-          "CidrIp": "179.67.64.0/18",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
           "CidrIp": "179.69.128.0/17",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "179.69.128.0/18",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "179.69.192.0/19",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "179.69.224.0/19",
           "Description": "Google IP Range"
         }
       ]
@@ -3418,15 +3373,6 @@
       "IpRanges": [
         {
           "CidrIp": "34.14.192.0/19",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.14.224.0/19",
           "Description": "Google IP Range"
         }
       ]
@@ -5424,60 +5370,6 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
-          "CidrIp": "34.183.130.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.183.131.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.183.132.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.183.133.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.183.136.0/22",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.183.144.0/20",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
           "CidrIp": "34.183.16.0/22",
           "Description": "Google IP Range"
         }
@@ -6064,69 +5956,6 @@
       "IpRanges": [
         {
           "CidrIp": "34.184.128.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.184.129.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.184.130.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.184.131.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.184.132.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.184.133.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.184.136.0/22",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "34.184.144.0/20",
           "Description": "Google IP Range"
         }
       ]
@@ -10267,15 +10096,6 @@
       "IpRanges": [
         {
           "CidrIp": "8.237.0.0/18",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "8.237.160.0/19",
           "Description": "Google IP Range"
         }
       ]

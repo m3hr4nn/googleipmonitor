@@ -7062,6 +7062,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "34.4.100.0/24",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "34.4.102.0/23",
           "Description": "Google IP Range"
         }

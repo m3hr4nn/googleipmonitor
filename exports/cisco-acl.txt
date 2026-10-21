@@ -1,5 +1,5 @@
 ! Google IP Ranges - Cisco ACL
-! Generated: 2026-10-21 08:02:11 UTC
+! Generated: 2026-10-21 14:10:09 UTC
 !
 ip access-list extended GOOGLE-IPS-V4
  permit ip 104.154.0.0 0.1.255.255 any
@@ -166,6 +166,7 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 177.208.0.0 0.1.255.255 any
  permit ip 179.193.128.0 0.0.127.255 any
  permit ip 179.193.128.0 0.0.31.255 any
+ permit ip 179.193.192.0 0.0.63.255 any
  permit ip 179.199.0.0 0.0.127.255 any
  permit ip 179.67.0.0 0.0.127.255 any
  permit ip 179.67.0.0 0.0.63.255 any
@@ -175,6 +176,7 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 179.69.192.0 0.0.31.255 any
  permit ip 179.69.224.0 0.0.31.255 any
  permit ip 186.242.0.0 0.0.127.255 any
+ permit ip 186.242.0.0 0.0.63.255 any
  permit ip 186.245.0.0 0.0.255.255 any
  permit ip 187.126.128.0 0.0.127.255 any
  permit ip 187.78.0.0 0.0.127.255 any
@@ -609,6 +611,8 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 34.183.132.0 0.0.0.255 any
  permit ip 34.183.133.0 0.0.0.255 any
  permit ip 34.183.136.0 0.0.3.255 any
+ permit ip 34.183.140.0 0.0.0.255 any
+ permit ip 34.183.141.0 0.0.0.255 any
  permit ip 34.183.144.0 0.0.15.255 any
  permit ip 34.183.16.0 0.0.3.255 any
  permit ip 34.183.2.0 0.0.0.255 any
@@ -681,6 +685,8 @@ ip access-list extended GOOGLE-IPS-V4
  permit ip 34.184.131.0 0.0.0.255 any
  permit ip 34.184.132.0 0.0.0.255 any
  permit ip 34.184.133.0 0.0.0.255 any
+ permit ip 34.184.134.0 0.0.0.255 any
+ permit ip 34.184.135.0 0.0.0.255 any
  permit ip 34.184.136.0 0.0.3.255 any
  permit ip 34.184.144.0 0.0.15.255 any
  permit ip 34.184.16.0 0.0.3.255 any

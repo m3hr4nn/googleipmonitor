@@ -789,6 +789,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "136.22.16.0/20",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "136.22.160.0/20",
           "Description": "Google IP Range"
         }
@@ -843,7 +852,7 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
-          "CidrIp": "136.22.8.0/22",
+          "CidrIp": "136.22.8.0/21",
           "Description": "Google IP Range"
         }
       ]
@@ -852,16 +861,7 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
-          "CidrIp": "136.23.39.0/24",
-          "Description": "Google IP Range"
-        }
-      ]
-    },
-    {
-      "IpProtocol": "-1",
-      "IpRanges": [
-        {
-          "CidrIp": "136.23.48.0/20",
+          "CidrIp": "136.23.0.0/17",
           "Description": "Google IP Range"
         }
       ]
@@ -1374,6 +1374,15 @@
       "IpProtocol": "-1",
       "IpRanges": [
         {
+          "CidrIp": "172.102.8.0/21",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
           "CidrIp": "172.110.32.0/21",
           "Description": "Google IP Range"
         }
@@ -1546,6 +1555,15 @@
       "IpRanges": [
         {
           "CidrIp": "179.69.224.0/19",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "185.150.148.0/22",
           "Description": "Google IP Range"
         }
       ]
@@ -1906,6 +1924,15 @@
       "IpRanges": [
         {
           "CidrIp": "208.81.188.0/22",
+          "Description": "Google IP Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "IpRanges": [
+        {
+          "CidrIp": "209.107.176.0/20",
           "Description": "Google IP Range"
         }
       ]
@@ -11383,6 +11410,15 @@
       "Ipv6Ranges": [
         {
           "CidrIpv6": "2a00:1450::/32",
+          "Description": "Google IPv6 Range"
+        }
+      ]
+    },
+    {
+      "IpProtocol": "-1",
+      "Ipv6Ranges": [
+        {
+          "CidrIpv6": "2a03:ace0::/32",
           "Description": "Google IPv6 Range"
         }
       ]

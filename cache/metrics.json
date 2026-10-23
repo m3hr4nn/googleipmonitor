@@ -181,7 +181,7 @@
     1266,
     1272,
     1272,
-    1266
+    1272
   ],
   "ipv4_counts": [
     1091,
@@ -273,7 +273,7 @@
     1156,
     1162,
     1162,
-    1156
+    1162
   ],
   "ipv6_counts": [
     63,
@@ -549,7 +549,7 @@
     0,
     0,
     0,
-    6
+    0
   ],
   "summary": {
     "total_data_points": 90,
@@ -557,14 +557,14 @@
       "start": "2026-07-26",
       "end": "2026-10-23"
     },
-    "current_total": 1266,
-    "current_ipv4": 1156,
+    "current_total": 1272,
+    "current_ipv4": 1162,
     "current_ipv6": 110,
-    "total_growth": 112,
+    "total_growth": 118,
     "avg_daily_change": 1.9
   },
   "metadata": {
-    "generated_at": "2026-10-23T07:59:30.953716",
+    "generated_at": "2026-10-23T13:51:51.880955",
     "service": "DataAggregatorService",
     "version": "1.1.0"
   }
